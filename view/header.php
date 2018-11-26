@@ -25,23 +25,11 @@
 
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="actualites">Actualités</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../employes/create">Evènement</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../tickets/read">Média</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../tickets/create">Discussions</a>
-                </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="accueil.php">Accueil</a>
+                        <a class="nav-link" href="accueil.php">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../employes/read">Actualités</a>
+                        <a class="nav-link" href="actualites">Actualités</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../employes/create">Evènement</a>
@@ -52,7 +40,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../tickets/create">Discussions</a>
                     </li>
->>>>>>> b5f246a07bdccbd7d1f0b19d00c06c67289d1096
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
