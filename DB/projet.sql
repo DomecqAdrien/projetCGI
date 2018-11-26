@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 26 nov. 2018 à 10:44
+-- Généré le :  lun. 26 nov. 2018 à 11:07
 -- Version du serveur :  5.7.23
 -- Version de PHP :  7.2.10
 
@@ -33,8 +33,24 @@ CREATE TABLE IF NOT EXISTS `actualites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre` varchar(40) CHARACTER SET latin1 NOT NULL,
   `description` varchar(1000) CHARACTER SET latin1 NOT NULL,
+  `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `adherents`
+--
+
+DROP TABLE IF EXISTS `adherents`;
+CREATE TABLE IF NOT EXISTS `adherents` (
+  `id_user` int(11) NOT NULL,
+  `status` enum('Attente','En cours','Valide','Carte en production') NOT NULL,
+  `debut_adherent` datetime NOT NULL,
+  `fin_adherent` datetime NOT NULL,
+  KEY `id_user` (`id_user`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -47,7 +63,8 @@ CREATE TABLE IF NOT EXISTS `chat` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `id_user_from` int(11) NOT NULL,
   `id_user_to` int(11) NOT NULL,
-  `message` varchar(600) CHARACTER SET latin1 NOT NULL,
+  `message` varchar(600) NOT NULL,
+  `datetime` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_user_from` (`id_user_from`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -63,7 +80,7 @@ CREATE TABLE IF NOT EXISTS `dons` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `montant` int(10) NOT NULL,
   `id_user` int(11) DEFAULT NULL,
-  `date` date NOT NULL,
+  `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
