@@ -6,11 +6,6 @@
         <title><?= $title ?></title>
         <!-- Bootstrap -->
         <link rel="stylesheet" type="text/css" href="./components/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="./components/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-        
 
     </head>
 
@@ -49,5 +44,12 @@
 
         <?php include $path ?>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./components/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="./components/js/script.js"></script>
+
     </body>
+
+    
 </html>

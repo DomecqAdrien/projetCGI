@@ -18,7 +18,12 @@
 
                 <div class="form-group" style="margin-bottom: 20px">
                   <label for="dateNaissance">Date de naissance :</label>
-                  <input" id="dateNaissance" class="form-control" data-provide="datepicker" type="text" name="dateNaissance" value="">
+                  <input" id="dateNaissance" class="form-control" type="text" name="dateNaissance" value="">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 20px">
+                  <label for="dateNaissance">Date de naissance :</label>
+                  <input" id="dateNaissance" class="form-control" type="text" name="dateNaissance" value="">
                 </div>
 
                 <div class="form-group" style="margin-bottom: 20px">
@@ -38,12 +43,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-      $(function(){
-        $('.datepicker').datetimepicker({
-          format: 'YYYY-MM-DD',
-          startDate: '-3d'
-      });
-      })
-      
-    </script>
+
+
