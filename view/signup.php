@@ -1,4 +1,3 @@
-<?php include "./view/header.php" ?> 
   <body>
     <div class="container">
       <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer un compte</h1>
@@ -19,7 +18,7 @@
 
                 <div class="form-group" style="margin-bottom: 20px">
                   <label for="dateNaissance">Date de naissance :</label>
-                  <input" id="dateNaissance" class="form-control datepicker" type="text" name="dateNaissance" value="">
+                  <input" id="dateNaissance" class="form-control" data-provide="datepicker" type="text" name="dateNaissance" value="">
                 </div>
 
                 <div class="form-group" style="margin-bottom: 20px">
@@ -39,9 +38,12 @@
         </div>
       </div>
     </div>
-    <script>
-      $('.datepicker').datepicker({
+    <script type="text/javascript">
+      $(function(){
+        $('.datepicker').datetimepicker({
           format: 'YYYY-MM-DD',
           startDate: '-3d'
       });
+      })
+      
     </script>

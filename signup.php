@@ -14,4 +14,6 @@ if($_POST){
 }
 
 $title = "Créer un compte";
-require "./view/signup.php";
+$path = "./view/signup.php";
+
+require "./view/header.php";
