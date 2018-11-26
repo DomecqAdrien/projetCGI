@@ -13,14 +13,15 @@
                      <label for="nom">Prénom : </label>
                      <input class="form-control" type="text" name="prenom" value="">
                   </div>
+
                   <div class="form-group" style="margin-bottom: 20px">
-                     <label for="dateNaissance">Date de naissance :</label>
-                     <input class="form-control datepicker" type="text" name="dateNaissance" value="">
+                     <div id="datepicker-group" class="date" data-date-format="mm-dd-yyyy">
+                        <label>Date de naissance : </label>
+                        <input class="form-control" name="dateNaissance" type="text" placeholder="YYYY-MM-DD" />
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                     </div>
                   </div>
-                  <div class="form-group" style="margin-bottom: 20px">
-                     <label for="dateNaissance">Date de naissance :</label>
-                     <input class="form-control" type="text" name="dateNaissance" value="">
-                  </div>
+
                   <div class="form-group" style="margin-bottom: 20px">
                      <label for="email">Email :</label>
                      <input id="email" class="form-control" type="text" name="mail" value="">

@@ -3,7 +3,7 @@
 class MyPDO extends PDO {
 
     private $sgbd = 'mysql';
-    private $db = 'entreprise';
+    private $db = 'projet';
     private $host = 'localhost';
     private $user = 'root';
     private $password = '';

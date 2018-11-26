@@ -5,9 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><?= $title ?></title>
         <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" media="all"
+         href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"/>
         <link rel="stylesheet" type="text/css" href="./components/css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" />
+    
 
     </head>
+
+    <?php if (session_status() == PHP_SESSION_NONE) session_start() ?>
+    
 
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -33,10 +40,18 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="signup">Sign Up</a>
+                        <?php if($_SESSION) : ?>
+                            <span class="nav-link text-light">Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
+                        <?php else : ?>
+                            <a class="nav-link" href="signup">Sign Up</a>
+                        <?php endif ?>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login">Login</a>
+                        <?php if($_SESSION) : ?>
+                            <a class="nav-link" href="logout">Logout</a>
+                        <?php else : ?>
+                            <a class="nav-link" href="login">Login</a>
+                        <?php endif ?>
                     </li>
                 </ul>
             </div>
@@ -46,7 +61,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="./components/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="./components/js/script.js"></script>
 
     </body>
