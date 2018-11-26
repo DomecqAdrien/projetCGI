@@ -26,20 +26,20 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="acceuil.php">Acceuil</a>
+                        <a class="nav-link" href="accueil.php">Acceuil</a>
                     </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../employes/read">Actualités</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../employes/create">Evènement</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../tickets/read">Média</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../tickets/create">Discussions</a>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../employes/read">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../employes/create">Evènement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tickets/read">Média</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tickets/create">Discussions</a>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
