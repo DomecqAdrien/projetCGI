@@ -1,1 +1,3 @@
-a cool
+<?php 
+
+require "./view/index.php";
