@@ -13,6 +13,9 @@
 
     </head>
 
+    <?php if (session_status() == PHP_SESSION_NONE) session_start() ?>
+    
+
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">IPI-Team</a>
@@ -37,10 +40,18 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="signup">Sign Up</a>
+                        <?php if($_SESSION) : ?>
+                            <span class="nav-link text-light">Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
+                        <?php else : ?>
+                            <a class="nav-link" href="signup">Sign Up</a>
+                        <?php endif ?>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login">Login</a>
+                        <?php if($_SESSION) : ?>
+                            <a class="nav-link" href="logout">Logout</a>
+                        <?php else : ?>
+                            <a class="nav-link" href="login">Login</a>
+                        <?php endif ?>
                     </li>
                 </ul>
             </div>

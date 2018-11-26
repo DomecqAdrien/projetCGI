@@ -42,6 +42,18 @@ class User{
 	    
 	}
 
+	public static function getOneByMail($mail){
+		$bd = new MyPDO();
+		$query = "SELECT * FROM  user WHERE mail = :mail";
+		$req = $bd->prepare($query);
+
+		$req->execute(array(
+			':mail' => $mail
+		));
+		return $req->fetch(PDO::FETCH_OBJ);
+
+	}
+
 	public function getId(){return $this->id;}
 
 	public function getNom(){return $this->nom;}
