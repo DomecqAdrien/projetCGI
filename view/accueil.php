@@ -2,24 +2,26 @@
 	<div class="container">	
 		<h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Présentation de l'association IPI-Team</h1>
 			<section id="bloc">
-				<article>
-					<div class="card">
-				      	<div class="card-body">
+				<div class="card">
+				    <div class="card-body">
+						<article class='bloc'>
 				        	<div class="row">
 				        		<div class="col-md-6 offset-2">
 				               		<p>Présentation rapide de l'activité de l'association. Date de création. Présentation des membres.</p>
 						       	</div>
 					    	</div>
-				     	</div>
-			   		</div>
-				</article>
+						</article>
+				    </div>
+			   	</div>
 					<div class="card">
 				      	<div class="card-body">
 				        	<div class="row">
-				        		<div class="col-md-6 offset-2">
-				               		<aside>
-										<p>Photo random de l'asso IPI-Team</p>
-									</aside>
+				        		<div class="bloc2">
+				        			<div class="col-md-6 offset-2">
+				               			<aside class='bloc'>
+											<p>Photo random de l'asso IPI-Team</p>
+										</aside>
+									</div>
 						       	</div>
 					    	</div>
 				     	</div>

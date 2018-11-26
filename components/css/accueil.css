@@ -3,5 +3,11 @@
     flex-direction: column;
     flex-direction: row;
     margin: auto;
-    flex: 1;
+}
+
+.bloc{
+	width: 100%;
+}
+.bloc2{
+	padding-right: 136px;
 }

@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="accueil.php">Acceuil</a>
+                        <a class="nav-link" href="accueil.php">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../employes/read">Actualités</a>
