@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="../employes/read">Actualités</a>
+                <a class="nav-link" href="actualites">Actualités</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="../employes/create">Evènement</a>
