@@ -1,0 +1,7 @@
+#bloc {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin: auto;
+    flex: 1;
+}

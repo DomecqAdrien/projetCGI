@@ -6,7 +6,6 @@
         <title><?= $title ?></title>
         <!-- Bootstrap -->
         <link rel="stylesheet" type="text/css" href="./components/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://uxsolutions.github.io/bootstrap-datepicker/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
 
     </head>
 
@@ -19,17 +18,17 @@
 
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="../employes/read">Actualités</a>
+                <li class="nav-item">
+                <a class="nav-link" href="../employes/read">Actualités</a>
                 </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="../employes/create">Evènement</a>
+                <li class="nav-item">
+                <a class="nav-link" href="../employes/create">Evènement</a>
                 </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="../tickets/read">Média</a>
+                <li class="nav-item">
+                <a class="nav-link" href="../tickets/read">Média</a>
                 </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="../tickets/create">Discussions</a>
+                <li class="nav-item">
+                <a class="nav-link" href="../tickets/create">Discussions</a>
                 </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
