@@ -11,6 +11,8 @@ if($_POST){
 	$newUser->setMail($_POST['mail']);
 	$newUser->setPassword($_POST['password']);
 
+	$newUser->create();
+
 }
 
 $title = "Créer un compte";

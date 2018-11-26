@@ -5,8 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><?= $title ?></title>
         <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" media="all"
+         href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"/>
         <link rel="stylesheet" type="text/css" href="./components/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://uxsolutions.github.io/bootstrap-datepicker/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" />
+        
 
     </head>
 
@@ -47,7 +50,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="./components/js/bootstrap.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="./components/js/script.js"></script>
 
     </body>
