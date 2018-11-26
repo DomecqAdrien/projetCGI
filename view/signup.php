@@ -18,12 +18,7 @@
 
                 <div class="form-group" style="margin-bottom: 20px">
                   <label for="dateNaissance">Date de naissance :</label>
-                  <input" id="dateNaissance" class="form-control" type="text" name="dateNaissance" value="">
-                </div>
-
-                <div class="form-group" style="margin-bottom: 20px">
-                  <label for="dateNaissance">Date de naissance :</label>
-                  <input" id="dateNaissance" class="form-control" type="text" name="dateNaissance" value="">
+                  <input" class="form-control" type="text" name="dateNaissance" value="">
                 </div>
 
                 <div class="form-group" style="margin-bottom: 20px">
