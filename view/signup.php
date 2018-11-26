@@ -18,8 +18,8 @@
                 </div>
 
                 <div class="form-group" style="margin-bottom: 20px">
-                  <label for="email">Date de naissance :</label>
-                  <input id="email" class="form-control" type="text" name="mail" value="">
+                  <label for="dateNaissance">Date de naissance :</label>
+                  <input" id="dateNaissance" class="form-control datepicker" type="text" name="dateNaissance" value="">
                 </div>
 
                 <div class="form-group" style="margin-bottom: 20px">
@@ -28,8 +28,8 @@
                 </div>
 
                 <div class="form-group" style="margin-bottom: 40px">
-                  <label for="sujet">Mot de passe :</label>
-                  <input class="form-control" type="text" name="taux" value="">
+                  <label for="password">Mot de passe :</label>
+                  <input class="form-control" type="password" name="password" value="">
                 </div>
 
                 <input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Envoyer"/>
@@ -39,3 +39,9 @@
         </div>
       </div>
     </div>
+    <script>
+      $('.datepicker').datepicker({
+          format: 'YYYY-MM-DD',
+          startDate: '-3d'
+      });
+    </script>
