@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 $title = "Home";
-$path = "./view/index.php";
+$path = "./view/accueil.php";
 require "./view/header.php";
 
 ?>
