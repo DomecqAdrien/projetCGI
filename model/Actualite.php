@@ -21,8 +21,6 @@ class Actualite {
 			$this->titre = $result['titre'];
 			$this->description = $result['description'];
 			$this->date = $result['date'];
-
-			var_dump($this);
 		}
 	}
 
@@ -39,7 +37,13 @@ class Actualite {
 	public function setDate($date){$this->date = $date;}
 
 	public function create(){
-
+		$myPDO = new MyPDO;
+		$sql = "INSERT INTO actualites (titre, description, date) VALUES (?, ?, ?)";
+		$mPdoSql = $myPDO->prepare($sql);
+		$mPdoSql->bindParam(1, $this->titre);
+		$mPdoSql->bindParam(2, $this->description);
+		$mPdoSql->bindParam(3, $this->date);
+		$mPdoSql->execute();
 	}
 
 	public function update(){
@@ -49,6 +53,14 @@ class Actualite {
 		$mPdoSql->bindParam(1, $this->titre);
 		$mPdoSql->bindParam(2, $this->description);
 		$mPdoSql->bindParam(3, $this->id);
+		$mPdoSql->execute();
+	}
+
+	public function delete(){
+		$myPDO = new MyPDO();
+		$sql = 'DELETE FROM actualites WHERE id = ?';
+		$mPdoSql = $myPDO->prepare($sql);
+		$mPdoSql->bindParam(1, $this->id);
 		$mPdoSql->execute();
 	}
 

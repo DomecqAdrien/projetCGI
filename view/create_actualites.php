@@ -5,7 +5,6 @@
       <div class="row">
         <div class="col">
           <form method="post">
-            <input type="hidden" name="id" value="<?=$actualite->getId();?>">
             <div class="form-group" style="margin-bottom: 20px">
               <label for="nom">Titre : </label>
               <input class="form-control" type="text" name="titre">

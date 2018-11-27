@@ -13,14 +13,16 @@
 			<p><?= $actualite['description'] ?></p>
 		</div>
 		<div class="row">
-			<div class="col"></div>
 			<div class="col">
 				<a href="update_actualites?id=<?=$key;?>">Editer</a>
+			</div>
+			<div class="col">
+				<a href="delete_actualites?id=<?=$key;?>">Supprimer</a>
 			</div>
 		</div>
 	</div>
 	<?php } ?>
 	<div class="row">
-		<a href=""></a>
+		<a href="create_actualites.php">Créer actualite</a>
 	</div>
 </div>
