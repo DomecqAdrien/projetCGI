@@ -1,5 +1,6 @@
 <?php
 
+var_dump($_SERVER);
 echo $_SERVER['REDIRECT_URL'];
 
 if(preg_match('#news-([0-9-]+)\.html#isU', $_SERVER['REDIRECT_URL'], $match)){
