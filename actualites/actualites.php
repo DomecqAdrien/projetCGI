@@ -2,6 +2,7 @@
 
 require_once '../model/Actualite.php';
 
+$dir = $dir = dirname(dirname($_SERVER['SCRIPT_NAME']));
 $title = "Actualités";
 $path = "../view/actualites/actualites.php";
 

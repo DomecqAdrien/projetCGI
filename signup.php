@@ -17,6 +17,7 @@ if($_POST){
 
 }
 
+$dir = dirname($_SERVER['SCRIPT_NAME']);
 $title = "Créer un compte";
 $path = "./view/signup.php";
 

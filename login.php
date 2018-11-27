@@ -24,9 +24,7 @@ if($_POST){
 }
 
 
-
-
-
+$dir = dirname($_SERVER['SCRIPT_NAME']);
 $title = "Se connecter";
 $path = "./view/login.php";
 
