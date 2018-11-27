@@ -1,0 +1,562 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"datepe",
+				"datepicker-group"
+			],
+			[
+				"th",
+				"this\t<?php $this->… ?>"
+			],
+			[
+				"src",
+				"script\tTag"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"tab",
+				"tabMoyenne"
+			],
+			[
+				"cur",
+				"currentNumber"
+			],
+			[
+				"geT",
+				"getElementById"
+			],
+			[
+				"spli",
+				"splitDate"
+			],
+			[
+				"dateS",
+				"datesString"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"marg",
+				"margin-left\tproperty"
+			],
+			[
+				"align",
+				"align-items\tproperty"
+			],
+			[
+				"border",
+				"border\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"ran",
+				"randomColor"
+			],
+			[
+				"random",
+				"randomColor"
+			],
+			[
+				"res",
+				"resultText"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"ra",
+				"randomColor"
+			],
+			[
+				"rando",
+				"randomHex"
+			],
+			[
+				"max",
+				"max-width\tproperty"
+			],
+			[
+				"siz",
+				"font-size\tproperty"
+			],
+			[
+				"f",
+				"False"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git pull",
+				"Git: Pull"
+			],
+			[
+				"git quick",
+				"Git: Quick Commit (current file)"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add All"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add ",
+				"Git: Add All"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git quick p",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git:push",
+				"Git: Push"
+			],
+			[
+				"git:com",
+				"Git: Commit"
+			],
+			[
+				"git:add",
+				"Git: Add All"
+			],
+			[
+				"git:pus",
+				"Git: Push"
+			],
+			[
+				"git:quick",
+				"Git: Quick Commit (repo)"
+			],
+			[
+				"git:pu",
+				"Git: Pull"
+			],
+			[
+				"git:co",
+				"Git: Commit"
+			],
+			[
+				"git:comm",
+				"Git: Commit"
+			],
+			[
+				"git:ad",
+				"Git: Add All"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"git:pul",
+				"Git: Pull"
+			],
+			[
+				"git:push ",
+				"Git: Push"
+			],
+			[
+				"git:add ",
+				"Git: Add All"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: isnta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"box",
+				"Boxy Theme: Preferences"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/bin/apache/apache2.4.35/conf/httpd.conf",
+		"/C/wamp/www/a/projetCGI/rewrite.php",
+		"/C/wamp/www/a/projetCGI/view/header.php",
+		"/C/wamp/www/a/projetCGI/.htaccess",
+		"/C/wamp/www/a/projetCGI/signup.php",
+		"/C/wamp/www/a/projetCGI/logout.php",
+		"/C/wamp/www/a/projetCGI/login.php",
+		"/C/wamp/www/a/projetCGI/delete_actualites.php",
+		"/C/wamp/www/a/projetCGI/create_actualites.php",
+		"/C/wamp/www/a/projetCGI/model/User.php",
+		"/C/wamp/www/a/projetCGI/view/update_actualites.php",
+		"/C/wamp/www/a/projetCGI/view/create_actualites.php",
+		"/C/wamp/www/a/projetCGI/model/Actualite.php",
+		"/C/wamp/www/a/projetCGI/view/login.php",
+		"/C/wamp/www/a/b/modele/Employe.php",
+		"/C/wamp/www/a/projetCGI/view/signup.php",
+		"/C/wamp/www/a/b/.htaccess",
+		"/C/wamp/www/a/projetcGI/.git/COMMIT_EDITMSG",
+		"/C/wamp/www/a/projetCGI/model/MyPDO.php",
+		"/C/wamp/www/a/symfo1/vendor/nikic/php-parser/lib/PhpParser/BuilderFactory.php",
+		"/C/wamp/www/a/projetCGI/components/js/script.js",
+		"/C/wamp/www/a/projetCGI/view/index.php",
+		"/C/wamp/www/a/projetCGI/view/footer.php",
+		"/C/wamp/www/a/projetCGI/components/js/bootstrap.min.js",
+		"/C/wamp/www/a/projetcGI/.git/MERGE_MSG",
+		"/C/wamp/www/a/projetCGI/index.php",
+		"/C/wamp/www/a/b/vue/employes/create.php",
+		"/C/Users/IPI/AppData/Roaming/Sublime Text 3/Packages/User/php-getters-setters.sublime-settings",
+		"/C/Users/IPI/AppData/Roaming/Sublime Text 3/Packages/PHP Getters and Setters/php-getters-setters.sublime-settings",
+		"/C/wamp/www/a/b/employes/create.php",
+		"/C/Users/IPI/Downloads/projet.sql",
+		"/C/wamp/www/a/b/vue/header.php",
+		"/C/wamp/www/a/projetCGI/vues/header.php",
+		"/C/wamp/www/a/projet/index.php",
+		"/C/wamp/www/a/symfo1/config/routes.yaml",
+		"/C/wamp/www/a/Test/db_connect.php",
+		"/C/wamp/www/a/Test/Personne.php",
+		"/C/wamp/www/a/b/tickets/update.php",
+		"/C/wamp/www/a/b/vue/employes/tickets.php",
+		"/C/wamp/www/a/b/employes/tickets.php",
+		"/C/wamp/www/a/b/modele/Logiciel.php",
+		"/C/wamp/www/a/b/modele/Ticket.php",
+		"/C/wamp/www/a/b/vue/tickets/update.php",
+		"/C/wamp/www/a/symfo1/src/Controller/LuckyController.php",
+		"/C/wamp/www/a/symfo1/src/Controller/PersonneController.php",
+		"/C/wamp/www/a/Test/Entreprise.php",
+		"/C/wamp/www/a/symfo1/src/Entity/Personne.php",
+		"/C/wamp/www/a/symfo1/templates/personne/index.html.twig",
+		"/C/wamp/www/a/symfo1/.env",
+		"/C/wamp/www/a/Test/manage_personnes.php",
+		"/C/wamp/www/a/Test/functions.php",
+		"/C/wamp/www/a/b/employes/update.php",
+		"/C/wamp/www/a/Test/manage_entreprises.php",
+		"/C/wamp/www/a/symfo1/templates/base.html.twig",
+		"/C/wamp/www/a/Test/footer.php",
+		"/C/wamp/www/a/Test/header.php",
+		"/C/wamp/www/a/Test/index.php",
+		"/C/Users/IPI/AppData/Local/Temp/Rar$DRa3620.15814/README.txt",
+		"/C/Users/IPI/Documents/My Games/Binding of Isaac Afterbirth+/options.ini",
+		"/C/wamp/www/a/Test/add_personne.php",
+		"/C/wamp/www/a/Test/js/script.js",
+		"/C/wamp/bin/apache/apache2.4.35/bin/php.ini",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/HTML;CSS/1.html",
+		"/E/Steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/autoexec.cfg",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/students/getStudent.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/oui.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/students/addStudent.js",
+		"/C/Users/IPI/Desktop/ADRIEN DOMECQ procedure.sql",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/fallen/theme.json",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/notes/getNotes.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/notes/getNotes.js",
+		"/C/Users/IPI/Downloads/facture.html",
+		"/C/Users/IPI/Downloads/a.html",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/fallen/info.inc.php",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/fallen/layout.inc.php",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/students/addStudent.html",
+		"/C/Users/IPI/Downloads/serveur-classe/serveur-classe/data/students.json",
+		"/C/Users/IPI/Downloads/serveur-classe/serveur-classe/data/scores.json",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/notes/addNote.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/notes/addNote.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/ajax.js",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/metro/theme.json",
+		"/E/Steam/steamapps/workshop/content/250900/1425556928/resources/items.xml",
+		"/E/Steam/steamapps/workshop/content/250900/1425556928 - Copie/metadata.xml",
+		"/E/Steam/steamapps/workshop/content/250900/1425556928 - Copie/main.lua",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/fallen/f,egk,gik,ed",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/fallen/sprites.lib.php",
+		"/C/Users/IPI/Downloads/M1106-TP3-Minkoue-formulaire.css",
+		"/C/wamp/apps/phpmyadmin4.8.3/themes/metro/layout.inc.php",
+		"/C/Users/IPI/Downloads/hr.sql",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/students/getStudent.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/subjects/addSubject.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/subjects/getSubjects.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/eve/eve.html",
+		"/C/Users/IPI/Downloads/serveur-classe/serveur-classe/data/subjects.json",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/subjects/getSubjects.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/subjects/addSubject.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/subjects/getStudent.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/subjects/getStudent.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/addStudent.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/addStudent.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/oui.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/script.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/getStudent.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/ajax/getStudent.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/index.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/tp/Adrien_DOMECQ.html",
+		"/C/Users/IPI/Downloads/serveur-classe/serveur-classe/gestionnaire-classe.jar",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/emails.xml",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/personnes.json",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/solution.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/calculatrice.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/calculatrice.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/Adrien_DOMECQ.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/eve.html",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/eve.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/HTML;CSS/script.js",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/JS/style.css",
+		"/C/Users/IPI/Desktop/Adrien DOMECQ/HTML;CSS/style.css",
+		"/C/Users/IPI/Desktop/HTML;CSS/dossier/adrienDOMECQ.html",
+		"/C/Users/IPI/Desktop/HTML;CSS/dossier/style.css",
+		"/C/Users/IPI/Downloads/ExoLesMerveilles/index.html",
+		"/C/Users/IPI/Desktop/HTML;CSS/style.css",
+		"/C/Users/IPI/Desktop/HTML;CSS/1.html",
+		"/C/Users/IPI/Desktop/HTML;CSS/script.js",
+		"/C/Users/IPI/Desktop/HTML;CSS/dossier/adrienDOMECQ.css",
+		"/C/Users/IPI/Desktop/HTML;CSS/dossier/index.html",
+		"/C/Users/IPI/Desktop/Java/HelloWorld/jquery/jquery-ui.css"
+	],
+	"find":
+	{
+		"height": 49.0
+	},
+	"find_in_files":
+	{
+		"height": 135.0,
+		"where_history":
+		[
+			"<current file>",
+			"<open folders>",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"allowoverride",
+			"buy_",
+			"setEleves",
+			"exercite",
+			"020",
+			"requestAjax",
+			"Student",
+			"showResult",
+			"spans",
+			"split",
+			"'moyenne'",
+			"'dateNaissance'",
+			"'nom'",
+			"'nom",
+			"'nom'",
+			"nbLignes",
+			"wonders",
+			"oldWonders",
+			"tableau",
+			"text",
+			"https://google.fr",
+			"flex:1",
+			"https://google.fr",
+			"beforee",
+			"id=\"lang",
+			"class=\"lang",
+			">a<",
+			"nomLangage",
+			"name=\"8\" ",
+			"aaaa",
+			" id=\"1\"",
+			"id=\"1\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"getEleves",
+			"exercice",
+			"20",
+			"getNotes",
+			"Subjects",
+			"Matiere",
+			"show",
+			"buttons",
+			"moyenne",
+			"dateNaissance",
+			"nom",
+			"nbColonnes",
+			"videoart2",
+			"video",
+			"art1",
+			"#",
+			"class=\"langage\" id=\"lang",
+			"id=\"lang",
+			"><",
+			"langage",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 48.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "update_actualites.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 357.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 574.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
