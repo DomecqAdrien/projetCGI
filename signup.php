@@ -13,6 +13,8 @@ if($_POST){
 
 	$newUser->create();
 
+	header('Location : login')
+
 }
 
 $title = "Créer un compte";

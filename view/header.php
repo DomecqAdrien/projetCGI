@@ -59,6 +59,11 @@
                 </ul>
             </div>
         </nav>
+        <?php if(isset($message)) : ?>
+            <div class="alert alert-<?= $message['type'] ?> text-center" role="alert">
+                <?= $message['message'] ?>
+            </div>
+        <?php endif ?>
 
         <?php include $path ?>
 
