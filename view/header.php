@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>title?</title>
+        <title><?= $title ?></title>
 
 
         <!-- Bootstrap core CSS -->
