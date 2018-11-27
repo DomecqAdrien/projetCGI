@@ -59,18 +59,18 @@
               <i class="fas fa-bars"></i>
             </button>
             <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Accueil</a>
-            <a class="navbar-brand js-scroll-trigger" href=<?=$dir ?>/actualites>Actualités</a>
-            <a class="navbar-brand js-scroll-trigger" href="accueil">Evenements</a>
-            <a class="navbar-brand js-scroll-trigger" href="accueil">Média</a>
-            <a class="navbar-brand js-scroll-trigger" href="accueil">Discussions</a>
-            <a class="navbar-brand js-scroll-trigger" href="accueil">Dons</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/actualites">Actualités</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Evenements</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Média</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Discussions</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Dons</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">
                   <?php if($_SESSION) : ?>
                     <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
                       <?php else : ?>
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="signup">Sign up</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=$dir ?>/signup">Sign up</a>
                       <?php endif ?>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
