@@ -3,9 +3,9 @@
 
 $dir = dirname(dirname($_SERVER['SCRIPT_NAME']));
 echo $dir;
-require $dir."/model/Post.php";
+require "../model/Post.php";
 
 $title = "forum";
-$path = "./view/forum.php";
+$path = $dir."/view/forum.php";
 
-require "./view/header.php";
+require $dir."./view/header.php";
