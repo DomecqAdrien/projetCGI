@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Freelancer - Start Bootstrap Theme</title>
+        <title>title?</title>
 
         <!-- Bootstrap core CSS -->
         <link href="./components/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -87,6 +87,7 @@
             </div>
         <?php endif ?>
 
+        <br><br><br><br>
         <!-- Vue principale -->
         <?php include $path ?>
 

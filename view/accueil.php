@@ -1,7 +1,6 @@
 <!-- Portfolio Grid Section -->
         <section class="portfolio" id="portfolio">
           <div class="container">
-          	<p></p>
             <h2 class="text-center text-uppercase text-secondary mb-0">Menu</h2>
             <hr class="star-dark mb-5">
             <div class="row">
