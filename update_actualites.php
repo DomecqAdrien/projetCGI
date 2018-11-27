@@ -11,14 +11,15 @@ if(!empty($_POST)) {
     $actualite->setId($_POST['id']);
     $actualite->setTitre($_POST['titre']);
     $actualite->setDescription($_POST['description']);
-    $actualite->update());
+    $actualite->update();
+	$title = "Actualités";
+	$path = "actualites.php";
+	require "actualites.php";
 }
-
-
-$title = "Update actualite";
-$path = "./view/update_actualites.php";
-
-
-require './view/header.php';
+else {
+	$title = "Update actualite";
+	$path = "./view/update_actualites.php";
+	require './view/header.php';
+}
 
 ?>

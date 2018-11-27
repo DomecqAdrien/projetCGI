@@ -19,8 +19,8 @@ class User{
 	public function create(){
 
 		$bd = new MyPDO();
-		$query = "INSERT INTO user (nom, prenom, mail, dateNaissance, password, salt) 
-			VALUES (:nom,:prenom,:mail,:dateNaissance, :password, :salt)";
+		$query = "INSERT INTO user (nom, prenom, mail, dateNaissance, password, salt, role) 
+			VALUES (:nom,:prenom,:mail,:dateNaissance, :password, :salt, :role)";
 	   
 
 	    /* Exécute la requête */
@@ -33,7 +33,8 @@ class User{
 		      ':mail'=> $this->mail, 
 		      ':dateNaissance' => $this->dateNaissance,
 		      ':password' => $this->password,
-		      ':salt' => $this->salt
+		      ':salt' => $this->salt,
+		      ':role' => 'user'
 		    ));
 	    }
 	    catch (Exception $e){

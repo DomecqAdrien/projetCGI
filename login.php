@@ -13,12 +13,17 @@ if($_POST){
 		foreach ($login as $key => $value) {
 			$_SESSION[$key] = $value;
 		}
-		header('Location: index');
+
+		$message = array('type' => 'success', 'message' => 'Connexion réussie');
+
+		//header('Location: index');
 	}
 
 
 	
 }
+
+
 
 
 

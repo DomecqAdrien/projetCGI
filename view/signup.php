@@ -1,16 +1,8 @@
-<<<<<<< HEAD
   <div class="container">
       <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer un compte</h1>
       <div class="card">
         <div class="card-body">
           <div class="row">
-=======
-<div class="container">
-   <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer un compte</h1>
-   <div class="card">
-      <div class="card-body">
-         <div class="row">
->>>>>>> b5f246a07bdccbd7d1f0b19d00c06c67289d1096
             <div class="col-md-6 offset-2">
                <form method="post">
                   <div class="form-group" style="margin-bottom: 20px">
