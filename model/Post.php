@@ -24,7 +24,7 @@ class Post{
 
 	    	$req->execute(array(
 		      ':titre' => $this->titre,
-		      ':dateCreation' => new Date("yyyy-mm-dd hh:mm:ss"), 
+		      ':dateCreation' => $this->dateCreation, 
 		      ':contenu'=> $this->contenu, 
 		      ':important' => $this->important,
 		      ':id_user' => $this->id_user,
@@ -34,6 +34,13 @@ class Post{
 	    	die($e->getMessage());
 	    }
 	}
+
+    public static function getAll(){
+        $myPDO = new MyPDO();
+        $sql = "SELECT * FROM posts";
+        $mPdoSql = $myPDO->query($sql);
+        return $mPdoSql->fetchAll(PDO::FETCH_OBJ);
+    }
 
 
 

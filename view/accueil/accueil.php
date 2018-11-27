@@ -1,3 +1,4 @@
+		<?php $title = "Accueil" ?>
         <!-- Header -->
         <header class="masthead bg-primary text-white text-center">
           <div class="container">

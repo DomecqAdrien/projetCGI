@@ -10,18 +10,18 @@
         <title><?= $title ?></title>
 
         <!-- Bootstrap core CSS -->
-        <link href="<?= $dir ?>/components/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?= Router::components('vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
 
         <!-- Custom fonts for this template -->
-        <link href="<?= $dir ?>/components/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="<?= Router::components('vendor/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
         <!-- Plugin CSS -->
-        <link href="<?= $dir ?>/components/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+        <link href="<?= Router::components('vendor/magnific-popup/magnific-popup.css') ?>" rel="stylesheet" type="text/css">
 
         <!-- Custom styles for this template -->
-        <link href="<?= $dir ?>/components/css/freelancer.min.css" rel="stylesheet">
+        <link href="<?= Router::components('css/freelancer.min.css') ?>" rel="stylesheet">
     
 
     </head>
@@ -42,42 +42,42 @@
                         <a class="nav-link" href="actualites">Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=".<?= $dir ?>/employes/create">Evènement</a>
+                        <a class="nav-link" href=".<?= Router::components('employes/create') ?>">Evènement</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=".<?= $dir ?>/tickets/read">Média</a>
+                        <a class="nav-link" href=".<?= Router::components('tickets/read') ?>">Média</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href=".<?= $dir ?>/tickets/create">Discussions</a>
+                        <a class="nav-link" href=".<?= Router::components('tickets/create') ?>">Discussions</a>
                     </li>
                 </ul> -->
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
           <div class="container">
             <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
               <i class="fas fa-bars"></i>
             </button>
-            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Accueil</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/actualites">Actualités</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Evenements</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Média</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Discussions</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=$dir ?>/accueil">Dons</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Evenements</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Média</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Discussions</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Dons</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">
                   <?php if($_SESSION) : ?>
                     <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-info" >Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
                       <?php else : ?>
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=$dir ?>/signup">Sign up</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=Router::url('user/signup') ?>">Sign up</a>
                       <?php endif ?>
                 </li>
                 <li class="nav-item mx-0 mx-lg-1">
                   <?php if($_SESSION) : ?>
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=$dir ?>/logout">Log out</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=Router::url('user/logout') ?>">Log out</a>
                   <?php else : ?>
-                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=$dir ?>/login">Log in</a>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=Router::url('user/login') ?>">Log in</a>
                   <?php endif ?>
                 </li>
               </ul>
@@ -86,7 +86,7 @@
         </nav>
 
         <!-- Alerts -->
-        <?php if(isset($message)) : ?>
+        <?php if(isset($message)) :  var_dump($message) ;?>
             <div class="alert alert-<?= $message['type'] ?> text-center" role="alert">
                 <?= $message['message'] ?>
             </div>
@@ -94,7 +94,7 @@
 
         <br><br><br><br>
         <!-- Vue principale -->
-        <?php include $path ?>
+        <?= $content ?>
 
         <!-- Footer -->
     <footer class="footer text-center">
@@ -144,21 +144,21 @@
       </div>
     </footer>
         <!-- Bootstrap core JavaScript -->
-        <script src="<?= $dir ?>/components/vendor/jquery/jquery.min.js"></script>
-        <script src="<?= $dir ?>/components/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="<?= Router::components('vendor/jquery/jquery.min.js') ?>"></script>
+        <script src="<?= Router::components('vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
         <!-- Plugin JavaScript -->
-        <script src="<?= $dir ?>/components/vendor/jquery-easing/jquery.easing.min.js"></script>
-        <script src="<?= $dir ?>/components/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script src="<?= Router::components('vendor/jquery-easing/jquery.easing.min.js') ?>"></script>
+        <script src="<?= Router::components('vendor/magnific-popup/jquery.magnific-popup.min.js') ?>"></script>
 
         <!-- Contact Form JavaScript -->
-        <script src="<?= $dir ?>/components/js/jqBootstrapValidation.js"></script>
-        <script src="<?= $dir ?>/components/js/contact_me.js"></script>
+        <script src="<?= Router::components('js/jqBootstrapValidation.js') ?>"></script>
+        <script src="<?= Router::components('js/contact_me.js') ?>"></script>
 
         <!-- Custom scripts for this template -->
-        <script src="<?= $dir ?>/components/js/freelancer.min.js"></script>
+        <script src="<?= Router::components('js/freelancer.min.js') ?>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-        <script type="text/javascript" src="<?= $dir ?>/components/js/script.js"></script>
+        <script type="text/javascript" src="<?= Router::components('js/script.js') ?>"></script>
 
     </body>
 
