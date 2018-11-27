@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
+
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?= $title ?></title>
-        <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" media="all"
-         href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"/>
-        <link rel="stylesheet" type="text/css" href="./components/css/bootstrap.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Freelancer - Start Bootstrap Theme</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./components/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="./components/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+        <!-- Plugin CSS -->
+        <link href="./components/vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+        <!-- Custom styles for this template -->
+        <link href="./components/css/freelancer.min.css" rel="stylesheet">
     
 
     </head>
@@ -19,13 +32,7 @@
     <body>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="accueil">IPI-Team</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarColor01">
+        <!--    <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="accueil">Accueil</a>
@@ -42,24 +49,34 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../tickets/create">Discussions</a>
                     </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="nav-item">
-                        <?php if($_SESSION) : ?>
-                            <span class="nav-link text-light">Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
-                        <?php else : ?>
-                            <a class="nav-link" href="signup">Sign Up</a>
-                        <?php endif ?>
-                    </li>
-                    <li class="nav-item">
-                        <?php if($_SESSION) : ?>
-                            <a class="nav-link" href="logout">Logout</a>
-                        <?php else : ?>
-                            <a class="nav-link" href="login">Login</a>
-                        <?php endif ?>
-                    </li>
-                </ul>
+                </ul> -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="accueil">IPI-Team</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item mx-0 mx-lg-1">
+                  <?php if($_SESSION) : ?>
+                    <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger">Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
+                      <?php else : ?>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="signup">Sign up</a>
+                      <?php endif ?>
+                </li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <?php if($_SESSION) : ?>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="logout">Log out</a>
+                  <?php else : ?>
+                    <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login">Log in</a>
+                  <?php endif ?>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
 
         <!-- Alerts -->
@@ -73,10 +90,20 @@
         <?php include $path ?>
 
         <!-- Footer -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="./components/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-        <script type="text/javascript" src="./components/js/script.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="./components/vendor/jquery/jquery.min.js"></script>
+        <script src="./components/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="./components/vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="./components/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="./components/js/jqBootstrapValidation.js"></script>
+        <script src="./components/js/contact_me.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="./components/js/freelancer.min.js"></script>
 
     </body>
 
