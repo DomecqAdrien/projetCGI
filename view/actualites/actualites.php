@@ -16,16 +16,16 @@
 				</div>
 				<div class="row">
 					<div class="col">
-						<a href="update_actualites?id=<?=$key;?>">Editer</a>
+						<a href="update?id=<?=$key;?>">Editer</a>
 					</div>
 					<div class="col">
-						<a href="delete_actualites?id=<?=$key;?>">Supprimer</a>
+						<a href="delete?id=<?=$key;?>">Supprimer</a>
 					</div>
 				</div>
 			</div>
 			<?php } ?>
 		</div>
 		<div class="card">
-			<a href="create_actualites.php">Créer actualite</a>
+			<a href="create">Créer actualite</a>
 		</div>
 </div>
