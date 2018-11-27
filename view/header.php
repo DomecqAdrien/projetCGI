@@ -105,6 +105,8 @@
 
         <!-- Custom scripts for this template -->
         <script src="./components/js/freelancer.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="./components/js/script.js"></script>
 
     </body>
 
