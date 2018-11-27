@@ -1,6 +1,8 @@
 <?php
 require_once '../model/Actualite.php';
 
+$dir = $dir = dirname(dirname($_SERVER['SCRIPT_NAME']));
+
 if($_POST) {
     $actualite = new Actualite();
     
@@ -12,11 +14,11 @@ if($_POST) {
     $actualite->create();
 
     $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-	//header('Location: actualites');
+	header('Location: actualites');
 }
 
 $title = "Create actualite";
-$path = "../view/actualites/actualites.php";
+$path = "../view/actualites/create.php";
 
 require '../view/header.php';
 
