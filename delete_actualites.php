@@ -5,6 +5,6 @@ if(isset($_GET['id'])){
     $actualite = new Actualite($_GET['id']);
 	$actualite->delete();
 }
-require 'actualites.php';
 
+header('Location: actualites');
 ?>
