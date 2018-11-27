@@ -1,6 +1,6 @@
 <?php
 
-require "myPDO.php";
+require "MyPDO.php";
 
 class Actualite {
 	private $id;
@@ -69,10 +69,6 @@ class Actualite {
 		$sql = "SELECT * FROM actualites";
 		$mPdoSql = $myPDO->query($sql);
 		return array_map('reset', $mPdoSql->fetchAll(PDO::FETCH_GROUP|PDO::FETCH_ASSOC));
-	}
-
-	public function getArticle(){
-
 	}
 }
 
