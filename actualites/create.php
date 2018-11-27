@@ -1,7 +1,7 @@
 <?php
 require_once '../model/Actualite.php';
 
-$dir = $dir = dirname(dirname($_SERVER['SCRIPT_NAME']));
+$dir = dirname(dirname($_SERVER['SCRIPT_NAME']));
 
 if($_POST) {
     $actualite = new Actualite();
