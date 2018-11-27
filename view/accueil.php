@@ -1,9 +1,9 @@
         <!-- Header -->
         <header class="masthead bg-primary text-white text-center">
           <div class="container">
-            <h1 class="text-uppercase mb-0">IPI-Team</h1>
+            <h1 class="text-uppercase mb-0 text-dark">IPI-Team</h1>
             <br>
-            <h2 class="font-weight-light mb-0">Groupe sportif - Supporter club de football de l'IPI</h2>
+            <h2 class="font-weight-light mb-0 text-dark">Groupe sportif - Supporter club de football de l'IPI</h2>
           </div>
         </header>
 
