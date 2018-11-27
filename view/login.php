@@ -1,10 +1,3 @@
-<!-- Header -->
-   <header class="masthead bg-primary text-white text-center">
-         <h2 class="font-weight-light mb-0">Se connecter</h2>
-      <div class="container">
-      </div>
-   </header>
-
 
 <div class="container">
    <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Se connecter</h1>
