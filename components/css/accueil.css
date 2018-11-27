@@ -6,8 +6,12 @@
 }
 
 .bloc{
-	width: 100%;
+	max-width: 100%;
 }
 .bloc2{
 	padding-right: 136px;
+}
+
+.col-md-6 offset-2{
+	max-width: 100%;
 }

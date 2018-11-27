@@ -14,7 +14,7 @@ if(!empty($_POST)) {
     $actualite->update();
 	$title = "Actualités";
 	$path = "actualites.php";
-	require "actualites.php";
+	header('Location: actualites');
 }
 else {
 	$title = "Update actualite";
