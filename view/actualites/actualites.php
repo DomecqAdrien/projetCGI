@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-<link rel="stylesheet" href="../components/css/actualites.css">	
-<section>
-=======
 <link rel="stylesheet" href="<?=Router::components('css/actualites.css');?>">
 <?php $title = "Actualites" ?>	
->>>>>>> c584b355dbbba4a0224a2bd26cae712d525552e5
 <div class="container">
 	<?php foreach($a_actualites as $key => $actualite){?>
 		<div class="card">
@@ -30,8 +25,8 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
 		</div>
+		<?php } ?>
 		<div class="card">
 			<a href="create"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Créer actualité"/></a>
 		</div>
