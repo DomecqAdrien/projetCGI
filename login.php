@@ -16,7 +16,7 @@ if($_POST){
 
 		$message = array('type' => 'success', 'message' => 'Connexion réussie');
 
-		header('Location: index');
+		header('Location: accueil');
 	}
 
 

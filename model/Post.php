@@ -11,7 +11,9 @@ class Post{
 	private $important;
 	private $id_user;
 
-	public function __construct($id = null){
+	public function __construct($id = null){}
+
+	public function create(){
 
 		$bd = new MyPDO();
 		$query = "INSERT INTO posts (titre, dateCreation, contenu, important, id_user) 
@@ -24,7 +26,7 @@ class Post{
 
 	    	$req->execute(array(
 		      ':titre' => $this->titre,
-		      ':dateCreation' => new Date("yyyy-mm-dd hh:mm:ss"), 
+		      ':dateCreation' => $this->dateCreation, 
 		      ':contenu'=> $this->contenu, 
 		      ':important' => $this->important,
 		      ':id_user' => $this->id_user,
@@ -33,6 +35,14 @@ class Post{
 	    catch (Exception $e){
 	    	die($e->getMessage());
 	    }
+
+	}
+
+		public static function getAll(){
+		$myPDO = new MyPDO();
+		$sql = "SELECT * FROM posts";
+		$mPdoSql = $myPDO->query($sql);
+		return $mPdoSql->fetchAll(PDO::FETCH_OBJ);
 	}
 
 
@@ -88,8 +98,10 @@ class Post{
     {
         $this->contenu = $contenu;
 
-        
     }
+
+    public function getImportant(){return $this->important;}
+    public function setImportant($important){$this->important = $important;}
 
     public function getIdUser()
     {
