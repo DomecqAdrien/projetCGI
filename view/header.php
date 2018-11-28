@@ -61,7 +61,7 @@
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Evenements</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Média</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Discussions</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Dons</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
