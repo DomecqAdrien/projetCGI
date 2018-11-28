@@ -19,7 +19,7 @@ class ActualitesController extends Controller{
             $actualite->setDescription($_POST['description']);
             $date = new DateTime();
             $date->modify("+1 hour");
-            $actualite->setDate($date->format("Y-m-d h:i:s"));
+            $actualite->setDate($date->format("Y-m-d H:i:s"));
             $actualite->create();
 
             $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
@@ -29,10 +29,10 @@ class ActualitesController extends Controller{
 
     function update(){
         $this->loadModel('Actualite');
-        debug($_GET);
+        //debug($_GET);
         if(!empty($_GET)){
             $data['actualite'] = new Actualite($_GET['id']);
-            debug($data);
+            //debug($data);
             $this->set($data);
         }
 
