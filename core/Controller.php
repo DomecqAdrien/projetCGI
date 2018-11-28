@@ -58,6 +58,7 @@ class Controller {
         die();
 
   }
+
   function request ($controller, $action){
     $controller .= 'Controller';
     //die($controller);

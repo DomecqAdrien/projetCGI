@@ -6,6 +6,7 @@ class ForumController extends Controller{
         $this->loadModel('Post');
 
         $posts = Post::getAll();
+        
     }
 
     function new(){

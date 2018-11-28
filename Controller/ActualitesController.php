@@ -5,12 +5,12 @@ class ActualitesController extends Controller{
     function actualites(){
         $this->loadModel('Actualite');
         $data['a_actualites'] = Actualite::getAllActualites();
-        debug($data);
         $this->set($data);
     }
 
     function create(){
         if($_POST) {
+
             $this->loadModel('Actualite');
 
             $actualite = new Actualite();
