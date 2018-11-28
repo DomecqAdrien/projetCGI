@@ -29,6 +29,16 @@
                 </div>
               </div>
             </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img">
+                  <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+                </div>
+                <div class="chat_ib">
+                  <h5>Deus Jean-Claude<span class="chat_date"> Date last msg</span></h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="mesgs">
@@ -45,15 +55,15 @@
                 <p>Message sortant</p>
                 <span class="time_date"> HH:mm    |    Month Day</span> </div>
             </div>
-        <div class="type_msg">
-            <div class="input_msg_write">
-              <input type="text" class="write_msg" placeholder="Type a message" />
-              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            <div class="type_msg">
+              <div class="input_msg_write">
+                <input type="text" class="write_msg" placeholder="Type a message" />
+                <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>      
+      </div>      
+    </div>
   </div>
-</div>
 </div>

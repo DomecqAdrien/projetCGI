@@ -2,7 +2,7 @@
 
 $this->loadModel('MyPdo');
 
-class Actualite {
+class Chat {
 	private $id_user_from;
 	private $id_user_to;
 	private $message;
@@ -62,3 +62,4 @@ class Actualite {
 		$mPdoSql->bindParam(2, $this->id_user_to);
 		return array_map('reset', $mPdoSql->fetchAll(PDO::FETCH_GROUP|PDO::FETCH_ASSOC));
 	}
+}
