@@ -45,6 +45,13 @@ class Post{
 		return $mPdoSql->fetchAll(PDO::FETCH_OBJ);
 	}
 
+    public static function getAll(){
+        $myPDO = new MyPDO();
+        $sql = "SELECT * FROM posts";
+        $mPdoSql = $myPDO->query($sql);
+        return $mPdoSql->fetchAll(PDO::FETCH_OBJ);
+    }
+
 
 
 

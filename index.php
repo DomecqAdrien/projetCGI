@@ -1,13 +1,18 @@
 <?php 
 
-define('WEBROOT',dirname(__FILE__));
-define('ROOT',dirname(WEBROOT));
+define('ROOT',dirname(__FILE__));
 define('DS',DIRECTORY_SEPARATOR);
+define('COMPONENTS',ROOT.DS.'components');
 define('CORE',ROOT.DS.'core');
-define('BASE_URL',dirname(dirname($_SERVER['SCRIPT_NAME'])));
+define('BASE_URL',dirname($_SERVER['SCRIPT_NAME']));
 
-echo ROOT;
-ECHO DS;
-echo CORE;
-echo BASE_URL;
+// echo ROOT."<br>";
+// ECHO DS."<br>";
+// echo CORE."<br>";
+// echo COMPONENTS."<br>";
+// echo BASE_URL;
+require CORE.DS.'includes.php';
+new Dispatcher();
+
+
 
