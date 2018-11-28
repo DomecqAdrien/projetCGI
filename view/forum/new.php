@@ -1,27 +1,34 @@
-<?php
+<div class="container">
+  <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer un post</h1>
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+        <div class="col">
+          <form method="post">
+            <div class="form-group" style="margin-bottom: 20px">
+              <label for="nom">Titre : </label>
+              <input class="form-control" type="text" name="titre">
+            </div>
 
-$dir = dirname(dirname($_SERVER['SCRIPT_NAME']));
-require "../model/Post.php";
+            <div class="form-group" style="margin-bottom: 20px">
+              <label for="nom">Contenu : </label>
+              <textarea class="form-control" rows="8" name="contenu"></textarea>
+            </div>
+            <?php debug($_SESSION); ?>
+            <?php if($_SESSION['role'] != "user") : ?>
+              <div class="form-group" style="margin-bottom: 20px">
+                <label for="important">Important : </label>
+                  <select class="form-control" name="important">
+                    <option value="1">Oui</option>
+                    <option value="0">Non</option>
+                  </select>
+              </div>
+            <?php endif ?>
 
-if($_POST){
-  session_start();
-  $post = new Post();
-
-  $post->setTitre($_POST['titre']);
-
-  $date = new DateTime();
-  $date->modify("+1 hour");
-  $post->setDateCreation($date->format("Y-m-d h:i:s"));
-
-  $post->setContenu($_POST['contenu']);
-  $important = (empty($_POST['important'])) ? 0 : $_POST['important'];
-  $post->setImportant($important);
-  $post->setIdUser($_SESSION['id']);
-
-  $post->create();
-}
-
-$title = "forum";
-$path = "../view/forum/new.php";
-
-require "../view/header.php";
+            <input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Envoyer"/>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

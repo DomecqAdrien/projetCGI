@@ -12,14 +12,13 @@ class UserController extends Controller{
             debug($login);
 
             if(hash("sha256", $_POST['password'].$login->salt) == $login->password){
-                session_start();
                 foreach ($login as $key => $value) {
                     $_SESSION[$key] = $value;
                 }
 
                 $message = array('type' => 'success', 'message' => 'Connexion réussie');
 
-                //header('Location: accueil');
+                $this->redirect('accueil');
             }
         }
     }
