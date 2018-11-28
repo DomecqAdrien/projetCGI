@@ -1,51 +1,59 @@
+<link rel="stylesheet" href="<?=Router::components('css/chat.css');?>">
+<?php $title = "Chat" ?>
 <div class="container">
-	<div class="row">
-        <div class="col-sm-4">
-            <div class="panel panel-primary">
-		        <div class="panel-heading top-bar">
-                    <div class="col-md-8 col-xs-8">
-                        <h3 class="panel-title"><span class="glyphicon glyphicon-book"></span> Contacts</h3>
-                    </div>
+  <div class="container">
+    <div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Friends</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar"  placeholder="Search" >
+                <span class="input-group-addon">
+                <button type="button"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img">
+                  <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
                 </div>
-		    </div>
+                <div class="chat_ib">
+                  <h5>Deus Jean-Claude<span class="chat_date"> Date last msg</span></h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-8">
-            <div class="chatbody">
-                <div class="panel panel-primary">
-                    <div class="panel-heading top-bar">
-                        <div class="col-md-8 col-xs-8">
-                            <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat - Miguel</h3>
-                        </div>
-                    </div>
-                <div class="panel-body msg_container_base">
-                    <div class="row msg_container base_sent">
-                        <div class="col-md-10 col-xs-10">
-                            <div class="messages msg_sent">
-                                <p>that mongodb thing looks good, huh?
-                                tiny master db, and huge document store</p>
-                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row msg_container base_receive">
-                        <div class="col-md-10 col-xs-10">
-                            <div class="messages msg_receive">
-                                <p>that mongodb thing looks good, huh?
-                                tiny master db, and huge document store</p>
-                                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel-footer">
-                    <div class="input-group">
-                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
-                        <span class="input-group-btn">
-                        <button class="btn btn-primary btn-sm" id="btn-chat"><i class="fa fa-send fa-1x" aria-hidden="true"></i></button>
-                        </span>
-                    </div>
-                </div>
-    		</div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Message entrant</p>
+                  <span class="time_date"> HH:mm    |    Month Day</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Message sortant</p>
+                <span class="time_date"> HH:mm    |    Month Day</span> </div>
+            </div>
+        <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+    </div>      
+  </div>
+</div>
 </div>

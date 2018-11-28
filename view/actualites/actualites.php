@@ -25,8 +25,8 @@
 					</div>
 				</div>
 			</div>
-			<?php } ?>
 		</div>
+		<?php } ?>
 		<div class="card">
 			<a href="create"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Créer actualité"/></a>
 		</div>
