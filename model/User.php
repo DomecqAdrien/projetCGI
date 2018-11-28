@@ -13,6 +13,27 @@ class User{
 	private $role;
 
 	public function __construct($id = null){
+
+		if (isset($id)) {
+            $myPDO = new MyPDO();
+            $sql = "SELECT * FROM user WHERE id = ?";
+            $mPdoSql = $myPDO->prepare($sql);
+            $mPdoSql->bindParam(1, $id);
+            $mPdoSql->execute();
+
+            $result = $mPdoSql->fetch(PDO::FETCH_OBJ);
+
+            $this->id = $result->id;
+            $this->nom = $result->nom;
+            $this->prenom = $result->prenom;
+            $this->mail = $result->mail;
+            $this->dateNaissance = $result->dateNaissance;
+            $this->password = $result->password;
+            $this->salt = $result->salt;
+            $this->role = $result->role;
+            
+            
+        }
 		
 	}
 

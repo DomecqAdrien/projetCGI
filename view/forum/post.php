@@ -24,7 +24,7 @@
                         <section id="user-description" class="col-md-3 ">
                             <section class="well">
                                 <div class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cricle"></i><?= $user->getPrenom()." ".strtoupper($user->getNom()) ?>I</a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cricle"></i><?= $user->getPrenom()." ".strtoupper($user->getNom()) ?></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="#"><i class="fa fa-user"></i> See profile</a></li>
                                         <li><a href="#"><i class="fa fa-envelope"></i> Send PM</a></li>
@@ -35,9 +35,7 @@
                                     </ul>
                                 </div>
                                 <figure>
-                                    <img class="img-rounded img-responsive" src="http://www.webdesignforums.net/img/wdf_avatar.jpg" alt="Mohammad Sharifi's avatar">
-                                    <figcaption class="text-center">مدیر کل سایت
-                                        <br><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i> </figcaption>
+                                    <img class="img-rounded img-responsive" src="http://www.webdesignforums.net/img/wdf_avatar.jpg">
                                 </figure>
                                 <dl class="dl-horizontal">
                                     <dt>joined date:</dt>
