@@ -1,3 +1,4 @@
+<?php $title = "Créer Actualité" ?>
 <div class="container">
   <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer une actualite</h1>
   <div class="card">

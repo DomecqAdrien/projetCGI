@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="../components/css/actualites.css">	
+<link rel="stylesheet" href="<?=Router::components('css/actualites.css');?>">
+<?php $title = "Actualites" ?>	
 <div class="container">
 	<?php foreach($a_actualites as $key => $actualite){?>
 		<div class="card">
