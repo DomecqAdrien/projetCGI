@@ -1,6 +1,6 @@
 <?php
 
-require "MyPDO.php";
+$this->loadModel('MyPdo');
 
 class Actualite {
 	private $id_user_from;

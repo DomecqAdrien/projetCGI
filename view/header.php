@@ -22,6 +22,8 @@
 
         <!-- Custom styles for this template -->
         <link href="<?= Router::components('css/freelancer.min.css') ?>" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="<?= Router::components('css/bootstrap-theme.min') ?>">
+
     
 
     </head>
