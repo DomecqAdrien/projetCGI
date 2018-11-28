@@ -17,14 +17,14 @@ class ForumController extends Controller{
 		    $actualite = new Post();
 		    
 		    $actualite->setTitre($_POST['titre']);
-		    $actualite->setDescription($_POST['description']);
+		    $actualite->setContenu($_POST['contenu']);
 		    $date = new DateTime();
 		    $date->modify("+1 hour");
-		    $actualite->setDate($date->format("Y-m-d H:i:s"));
+		    $actualite->setDateCreation($date->format("Y-m-d H:i:s"));
 		    $actualite->create();
 
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-			header('Location: actualites');
+			header('Location: forum/forum');
 		}
     }
 

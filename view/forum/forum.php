@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
 <div class="container">
-	<a href="new">Créer un post</a>
+	<a href="<?= Router::url('forum/new') ?>">Créer un post</a>
 
 	<div class="container">
 		<h3>Posts Importants</h3>

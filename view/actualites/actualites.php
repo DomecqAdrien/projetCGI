@@ -18,17 +18,17 @@
 				<div class="row">
 					<div class="col-5"></div>
 					<div class="col">
-						<a href="update?id=<?=$key;?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Editer"/></a>
+						<a href="<?= Router::url("actualites/update?id={$key}") ?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Editer"/></a>
 					</div>
 					<div class="col">
-						<a href="delete?id=<?=$key;?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Supprimer"/></a>
+						<a href="<?= Router::url("actualites/delete?id={$key}")?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Supprimer"/></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<?php } ?>
 		<div class="card">
-			<a href="create"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Créer actualité"/></a>
+			<a href="<?= Router::url('actualites/create') ?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Créer actualité"/></a>
 		</div>
 </div>
 </section>
