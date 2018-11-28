@@ -1,6 +1,6 @@
 <?php
 
-require "MyPDO.php";
+$this->loadModel('MyPdo');
 
 class Post{
 	private $id;
@@ -11,7 +11,25 @@ class Post{
 	private $important;
 	private $id_user;
 
-	public function __construct($id = null){}
+	public function __construct($id = null){
+        if (isset($id)) {
+            $myPDO = new MyPDO();
+            $sql = "SELECT * FROM posts WHERE id = ?";
+            $mPdoSql = $myPDO->prepare($sql);
+            $mPdoSql->bindParam(1, $id);
+            $mPdoSql->execute();
+
+            $result = $mPdoSql->fetch(PDO::FETCH_OBJ);
+
+            $this->id = $result->id;
+            $this->titre = $result->titre;
+            $this->dateCreation = $result->dateCreation;
+            $this->contenu = $result->contenu;
+            $this->id_user = $result->id_user;
+            
+            
+        }
+    }
 
 	public function create(){
 

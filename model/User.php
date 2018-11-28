@@ -1,6 +1,6 @@
 <?php 
 
-require "MyPDO.php";
+$this->loadModel('MyPdo');
 
 class User{
 	private $id;
@@ -54,6 +54,20 @@ class User{
 		return $req->fetch(PDO::FETCH_OBJ);
 
 	}
+
+	public static function getOneById($id){
+		$bd = new MyPDO();
+		$query = "SELECT * FROM  user WHERE id = :id";
+		$req = $bd->prepare($query);
+
+		$req->execute(array(
+			':id' => $id
+		));
+		return $req->fetch(PDO::FETCH_OBJ);
+
+	}
+
+
 
 	public function getId(){return $this->id;}
 

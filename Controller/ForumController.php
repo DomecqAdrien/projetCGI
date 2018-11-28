@@ -14,7 +14,7 @@ class ForumController extends Controller{
         if($_POST) {
         	$this->loadModel('Post');
 
-		    $actualite = new Actualite();
+		    $actualite = new Post();
 		    
 		    $actualite->setTitre($_POST['titre']);
 		    $actualite->setDescription($_POST['description']);
@@ -29,8 +29,13 @@ class ForumController extends Controller{
     }
 
     function post($id){
-    	echo $id;
+    	$this->loadModel('Post');
+    	$this->loadModel('User');
 
+    	$d['post'] = new Post($id);
+    	$d['user'] = User::($d['post']->getIdUser());
+
+    	$this->set($d);
     }
 
 
