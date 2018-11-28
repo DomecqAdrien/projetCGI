@@ -154,7 +154,6 @@
 
         <!-- Contact Form JavaScript -->
         <script src="<?= Router::components('js/jqBootstrapValidation.js') ?>"></script>
-        <script src="<?= Router::components('js/contact_me.js') ?>"></script>
 
         <!-- Custom scripts for this template -->
         <script src="<?= Router::components('js/freelancer.min.js') ?>"></script>

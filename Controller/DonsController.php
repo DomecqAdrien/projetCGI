@@ -20,6 +20,10 @@ class DonsController extends Controller{
 			$date->modify("+1 hour");
 	        $don->setDate($date->format("Y-m-d h:i:s"));
 	        $don->create();
+
+	        $message = array('type' => 'success', 'message' => 'Donnation réussie');
+
+	        $this->redirect('accueil');
 		}
 	}
 }

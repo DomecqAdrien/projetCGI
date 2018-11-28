@@ -72,8 +72,8 @@ class Dons{
 	public function getMontant(){return $this->montant;}
 	public function setMontant($montant){$this->montant = $montant;}
 
-	public function getDate(){return $this->montant;}
-	public function setDate($montant){$this->montant = $montant;}
+	public function getDate(){return $this->date;}
+	public function setDate($date){$this->date = $date;}
 
 }
 
