@@ -20,7 +20,7 @@ class ForumController extends Controller{
 		    $actualite->setDescription($_POST['description']);
 		    $date = new DateTime();
 		    $date->modify("+1 hour");
-		    $actualite->setDate($date->format("Y-m-d h:i:s"));
+		    $actualite->setDate($date->format("Y-m-d H:i:s"));
 		    $actualite->create();
 
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
@@ -33,7 +33,7 @@ class ForumController extends Controller{
     	$this->loadModel('User');
 
     	$d['post'] = new Post($id);
-    	$d['user'] = User::($d['post']->getIdUser());
+    	$d['user'] = new User($d['post']->getIdUser());
 
     	$this->set($d);
     }

@@ -24,7 +24,7 @@
                         <section id="user-description" class="col-md-3 ">
                             <section class="well">
                                 <div class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cricle"></i>MOHAMMAD SHARIFI<span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cricle"></i><?= $user->getPrenom()." ".strtoupper($user->getNom()) ?>I</a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="#"><i class="fa fa-user"></i> See profile</a></li>
                                         <li><a href="#"><i class="fa fa-envelope"></i> Send PM</a></li>
