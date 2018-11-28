@@ -1,21 +1,39 @@
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/post.css') ?>">
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-md-12 well">
+      <time class="float-right">
+        <i class="fa fa-calendar"></i> <?= $post->getDateCreation() ?>
+      </time>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+</div>
+
+
 <div class="container">
   <section class="row clearfix">
     <section class="col-md-12 column">
         <div class="row clearfix">
             <div class="col-md-12 column">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <section class="panel-title">
-                            <time class="pull-right">
+                <div class="card card-default">
+                    <div class="card-heading">
+                        <section class="card-title well">
+                            <time class="float-right">
                                 <i class="fa fa-calendar"></i> 2014-09-15 , <i class="fa fa-clock-o"></i> 1:35 pm
                             </time>
-                            <section class="pull-left" id="id">
+                            <section class="float-left" id="id">
                                 <abbr title="count of posts in this topic">#1</abbr>
                             </section>
                         </section>
                     </div>
-                    <section class="row panel-body">
+                    <section class="row card-body">
                         <section class="col-md-9">
                             <h2> <i class="fa fa-smile-o"></i> <?= $post->getTitre() ?></h2>
                             <hr> <?= $post->getContenu() ?>
@@ -47,7 +65,7 @@
                         </section>
 
                     </section>
-                    <div class="panel-footer">
+                    <div class="card-footer">
                         <div class="row">
                             <section class="col-md-4">
                                 <span class="fa-stack">
@@ -66,3 +84,5 @@
     </section>
 </section>
 </div>
+
+
