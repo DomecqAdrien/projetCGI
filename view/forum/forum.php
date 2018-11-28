@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
 <div class="container">
 	<a href="new">Créer un post</a>
@@ -8,8 +9,8 @@
 			<div class="card">
 				<section class="row panel-body">
 		            <section class="col-md-6">
-		              <h4> <a href="#"><i class="glyphicon glyphicon-th-list"> </i> <?= $post->titre ?></a></h4> <hr>
-		              <h6>In This section You lean Web design ! </h6>
+		              <h4> <a href="post/<?= $post->id ?>"><i class="glyphicon glyphicon-th-list"> </i> <?= $post->titre ?></a></h4> <hr>
+		              <h6><?= $post->contenu ?></h6>
 		              
 		            </section>
 		            <section class="col-md-2">

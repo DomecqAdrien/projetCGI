@@ -5,7 +5,8 @@ class ForumController extends Controller{
     function forum(){
         $this->loadModel('Post');
 
-        $posts = Post::getAll();
+        $d['posts'] = Post::getAll();
+        $this->set($d);
 
     }
 
@@ -25,6 +26,11 @@ class ForumController extends Controller{
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
 			header('Location: actualites');
 		}
+    }
+
+    function post($id){
+    	echo $id;
+
     }
 
 
