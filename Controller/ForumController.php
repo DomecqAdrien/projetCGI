@@ -29,7 +29,8 @@ class ForumController extends Controller{
 		    $date = new DateTime();
 		    $date->modify("+1 hour");
 		    $actualite->setDateCreation($date->format("Y-m-d H:i:s"));
-            $actualite->setImportant($_POST['important']);
+            $important = (empty($_POST['important'])) ? 0 : $_POST['important'];
+            $actualite->setImportant($important);
             $actualite->setIdUser($_SESSION['id']);
 		    $actualite->create();
 
