@@ -31,8 +31,10 @@ class ForumController extends Controller{
 		    $actualite->setDateCreation($date->format("Y-m-d H:i:s"));
 		    $actualite->create();
 
+            debug($actualite);
+
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-			header('Location: forum/forum');
+			//header('Location: forum/forum');
 		}
     }
 

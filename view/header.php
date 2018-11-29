@@ -61,10 +61,10 @@
             </button>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Evenements</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Discussions</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Discussions</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('dons') ?>">Dons</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">

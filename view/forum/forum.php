@@ -1,4 +1,5 @@
 <?php $title = "Forum" ?>
+<?php if($_SESSION['adherant'] == 1 || $_SESSION['role'] != "user") : ?>
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
 <div class="container">
@@ -21,3 +22,6 @@
 		<?php endforeach ?>
 	</div>		
 </div>
+<?php else : ?>
+<h1 class="text-center">Veuillez adhérer pour accéder au <?= $title ?></h1>
+<?php endif ?>
