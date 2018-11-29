@@ -5,7 +5,7 @@ class AdminController extends Controller{
     function index(){
     	$this->loadModel('User');
 
-    	$d['users'] = User::getAll();
+    	$d['users'] = User::getAll('object');
 
     	$this->set($d);
     }

@@ -37,7 +37,7 @@ class ForumController extends Controller{
             debug($actualite);
 
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-			header('Location: forum/forum');
+			header('Location: forum');
 		}
     }
 
