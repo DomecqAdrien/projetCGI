@@ -1,4 +1,5 @@
 <!-- Contact Section -->
+<?php $title = "Faire un don" ?>
     <section id="contact">
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Faire un don</h2>

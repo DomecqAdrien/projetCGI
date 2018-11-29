@@ -1,3 +1,4 @@
+<?php $title = "Créer un post" ?>
 <div class="container">
   <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer un post</h1>
   <div class="card">
@@ -14,7 +15,6 @@
               <label for="nom">Contenu : </label>
               <textarea class="form-control" rows="8" name="contenu"></textarea>
             </div>
-            <?php debug($_SESSION); ?>
             <?php if($_SESSION['role'] != "user") : ?>
               <div class="form-group" style="margin-bottom: 20px">
                 <label for="important">Important : </label>

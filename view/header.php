@@ -69,7 +69,8 @@
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">
                   <?php if($_SESSION) : ?>
-                    <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-info" >Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
+                    <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-info" ><?= $_SESSION['prenom']." ".$_SESSION['nom'];
+                    if($_SESSION['role'] == 'admin'){ echo '[Admin]'; } ?></span>
                       <?php else : ?>
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=Router::url('user/signup') ?>">Sign up</a>
                       <?php endif ?>

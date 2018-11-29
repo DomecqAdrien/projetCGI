@@ -1,3 +1,4 @@
+<?php $title = $post->getTitre() ?>
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/post.css') ?>">
 
 <div class="container-fluid">
