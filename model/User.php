@@ -88,6 +88,14 @@ class User{
 
 	}
 
+	public static function getAll(){
+		$bd = new MyPDO();
+		$query = "SELECT id, nom, prenom, mail, dateNaissance FROM user";
+		$req = $bd->query($query);
+
+		return array_map('reset', $req->fetchAll(PDO::FETCH_GROUP|PDO::FETCH_ASSOC));
+	}
+
 
 
 	public function getId(){return $this->id;}
