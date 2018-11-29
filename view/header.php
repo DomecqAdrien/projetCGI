@@ -159,6 +159,7 @@
         <script src="<?= Router::components('js/freelancer.min.js') ?>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
         <script type="text/javascript" src="<?= Router::components('js/script.js') ?>"></script>
+        <script type="text/javascript" src="<?= Router::components('js/chat.js') ?>"></script>
 
     </body>
 

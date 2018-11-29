@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="<?=Router::components('css/actualites.css');?>">
 <?php $title = "Actualites" ?>	
 <div class="container">
-	<?php foreach($a_actualites as $key => $actualite){?>
+	<?php foreach($a_actualites as $key => $actualite) : ?>
 		<div class="card">
 			<div class="bloc">
 				<div class="row">
@@ -26,7 +26,7 @@
 				</div>
 			</div>
 		</div>
-		<?php } ?>
+		<?php endforeach ?>
 		<div class="card">
 			<a href="<?= Router::url('actualites/create') ?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Créer actualité"/></a>
 		</div>

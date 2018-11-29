@@ -88,7 +88,15 @@ class User{
 
 	}
 
-
+	public static function getAllUsers($id){
+		$bd = new MyPDO();
+		$query = "SELECT id, nom, prenom, role FROM user WHERE id != :id";
+		$req = $bd->prepare($query);
+		$req->execute(array(
+			':id' => $id
+		));
+		return $req->fetchAll(PDO::FETCH_OBJ);
+	}
 
 	public function getId(){return $this->id;}
 

@@ -56,10 +56,13 @@ class Chat {
 
 	public static function getAllMessages($id_user_from, $id_user_to){
 		$myPDO = new MyPDO();
-		$sql = "SELECT * FROM chat WHERE id_user_from = ? AND id_user_to = ?";
+		$sql = "SELECT * FROM chat WHERE (id_user_from = ? AND id_user_to = ?) OR (id_user_from = ? AND id_user_to = ?)";
 		$mPdoSql = $myPDO->prepare($sql);
-		$mPdoSql->bindParam(1, $this->id_user_from);
-		$mPdoSql->bindParam(2, $this->id_user_to);
-		return array_map('reset', $mPdoSql->fetchAll(PDO::FETCH_GROUP|PDO::FETCH_ASSOC));
+		$mPdoSql->bindParam(1, $id_user_from);
+		$mPdoSql->bindParam(2, $id_user_to);
+		$mPdoSql->bindParam(3, $id_user_to);
+		$mPdoSql->bindParam(4, $id_user_from);
+		$mPdoSql->execute();
+		return $mPdoSql->fetchAll(PDO::FETCH_OBJ);
 	}
 }

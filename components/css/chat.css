@@ -56,7 +56,6 @@ img{ max-width:100%;}
   margin: 0;
   padding: 18px 16px 10px;
 }
-
 .inbox_chat { height: 550px; overflow-y: scroll;}
 
 .active_chat{ background:#ebebeb;}
@@ -88,7 +87,9 @@ img{ max-width:100%;}
 }
 .received_withd_msg { width: 57%;}
 .mesgs {
+  float: left;
   padding: 30px 15px 0 25px;
+  width: 60%;
 }
 
  .sent_msg p {
@@ -132,3 +133,10 @@ img{ max-width:100%;}
   height: 516px;
   overflow-y: auto;
 }
+.test{
+  background: red;
+}
+.msgs {
+  height: 470px;
+}
+/*LOOOOOOOOOOOL*/

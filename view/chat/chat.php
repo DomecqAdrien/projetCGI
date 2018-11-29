@@ -1,6 +1,5 @@
 <link rel="stylesheet" href="<?=Router::components('css/chat.css');?>">
 <?php $title = "Chat" ?>
-<div class="container">
   <div class="container">
     <div class="messaging">
       <div class="inbox_msg">
@@ -19,51 +18,35 @@
             </div>
           </div>
           <div class="inbox_chat">
+            <?php foreach($users as $user) : ?>
             <div class="chat_list">
               <div class="chat_people">
                 <div class="chat_img">
                   <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
                 </div>
                 <div class="chat_ib">
-                  <h5>Deus Jean-Claude<span class="chat_date"> Date last msg</span></h5>
+                  <h5><?php echo $user->nom." ".$user->prenom; ?><span class="chat_date">Date last msg</span></h5>
                 </div>
+                <div class='id' id='<?= $user->id ?>'></div>
               </div>
             </div>
-            <div class="chat_list">
-              <div class="chat_people">
-                <div class="chat_img">
-                  <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
-                </div>
-                <div class="chat_ib">
-                  <h5>Deus Jean-Claude<span class="chat_date"> Date last msg</span></h5>
-                </div>
-              </div>
-            </div>
+            <?php endforeach ?>
           </div>
         </div>
         <div class="mesgs">
           <div class="msg_history">
             <div class="incoming_msg">
-              <div class="received_msg">
-                <div class="received_withd_msg">
-                  <p>Message entrant</p>
-                  <span class="time_date"> HH:mm    |    Month Day</span></div>
-              </div>
-            </div>
-            <div class="outgoing_msg">
-              <div class="sent_msg">
-                <p>Message sortant</p>
-                <span class="time_date"> HH:mm    |    Month Day</span> </div>
-            </div>
-            <div class="type_msg">
-              <div class="input_msg_write">
-                <input type="text" class="write_msg" placeholder="Type a message" />
-                <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-              </div>
+              <div class="msgs">
+              </div>  
             </div>
           </div>
-        </div>
-      </div>      
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button"><i class="" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>      
+      </div>
     </div>
   </div>
-</div>
