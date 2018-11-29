@@ -88,11 +88,13 @@ class User{
 
 	}
 
-	public static function getAll(){
+	public static function getAll($type= null){
 		$bd = new MyPDO();
 		$query = "SELECT id, nom, prenom, mail, dateNaissance FROM user";
 		$req = $bd->query($query);
-
+		if($type = 'object'){
+			return $req->fetchAll(PDO::FETCH_OBJ);
+		}
 		return array_map('reset', $req->fetchAll(PDO::FETCH_GROUP|PDO::FETCH_ASSOC));
 	}
 
