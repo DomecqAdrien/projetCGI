@@ -1,3 +1,5 @@
+<?php $title = "Forum" ?>
+<?php if(/*$_SESSION['adherant'] == 1 || */$_SESSION['role'] != "user") : ?>
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
 <div class="container">
@@ -6,30 +8,20 @@
 	<div class="container">
 		<h3>Posts Importants</h3>
 		<?php foreach ($posts as $post) : ?>
-			<div class="card">
-				<section class="row panel-body">
-		            <section class="col-md-6">
-		              <h4> <a href="post/<?= $post->id ?>"><i class="glyphicon glyphicon-th-list"> </i> <?= $post->titre ?></a></h4> <hr>
-		              <h6><?= $post->contenu ?></h6>
-		              
-		            </section>
-		            <section class="col-md-2">
-		              <ul id="post-topic">
-		                <li class="list-unstyled"> Topics:62 </li>
-		                <li class="list-unstyled"> Posts:445 </li>
-		              </ul>
-		            </section>
-		            <section class="col-md-3">
-		              <h4> <a href="#"><i class="glyphicon glyphicon-link"> </i> Last Post Goes from here! </a></h4> <hr>
-		              <a href="#"><i class="glyphicon glyphicon-user"></i> <?= $post->id_user ?> </a><br>
-		              <a href="#"><i class="glyphicon glyphicon-calendar"></i> <?= $post->dateCreation ?>  </a>
-		            </section>
-		        </section>
-			</div>
-			
+			<?php if($post->important == 1) : ?>
+				<?php include "forumContent.php" ?>
+			<?php endif ?>
 		<?php endforeach ?>
 	</div>
 	<div class="container">
-		
+		<h4>Autres posts</h4>
+		<?php foreach ($posts as $post) : ?>
+			<?php if($post->important == 0) : ?>
+				<?php include "forumContent.php" ?>
+			<?php endif ?>
+		<?php endforeach ?>
 	</div>		
 </div>
+<?php else : ?>
+<h1 class="text-center">Veuillez adhérer pour accéder au <?= $title ?></h1>
+<?php endif ?>

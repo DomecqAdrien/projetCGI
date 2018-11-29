@@ -61,15 +61,22 @@
             </button>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Evenements</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Discussions</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Discussions</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('dons') ?>">Dons</a>
+            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a>
+            <?php if($_SESSION && $_SESSION['role'] == 'admin') : ?>
+              <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('admin/index') ?>">Admin</a>
+            <?php endif ?>
+
+
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item mx-0 mx-lg-1">
                   <?php if($_SESSION) : ?>
-                    <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-info" >Bonjour, <?= $_SESSION['prenom']." ".$_SESSION['nom'] ?></span>
+                    <span class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger text-info" ><?= $_SESSION['prenom']." ".$_SESSION['nom'];
+                    if($_SESSION['role'] == 'admin'){ echo '[Admin]'; } ?></span>
                       <?php else : ?>
                         <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="<?=Router::url('user/signup') ?>">Sign up</a>
                       <?php endif ?>

@@ -58,7 +58,7 @@ class Post{
 
     public static function getAll(){
         $myPDO = new MyPDO();
-        $sql = "SELECT * FROM posts";
+        $sql = "SELECT id, id_user, titre, dateCreation, important, LEFT(contenu, 20) as contenu FROM posts";
         $mPdoSql = $myPDO->query($sql);
         return $mPdoSql->fetchAll(PDO::FETCH_OBJ);
     }
