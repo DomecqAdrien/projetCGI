@@ -29,12 +29,15 @@ class ForumController extends Controller{
 		    $date = new DateTime();
 		    $date->modify("+1 hour");
 		    $actualite->setDateCreation($date->format("Y-m-d H:i:s"));
+            $important = (empty($_POST['important'])) ? 0 : $_POST['important'];
+            $actualite->setImportant($important);
+            $actualite->setIdUser($_SESSION['id']);
 		    $actualite->create();
 
             debug($actualite);
 
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-			//header('Location: forum/forum');
+			header('Location: forum/forum');
 		}
     }
 
