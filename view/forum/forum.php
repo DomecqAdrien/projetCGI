@@ -1,5 +1,5 @@
 <?php $title = "Forum" ?>
-<?php if($_SESSION['adherant'] == 1 || $_SESSION['role'] != "user") : ?>
+<?php if(/*$_SESSION['adherant'] == 1 || */$_SESSION['role'] != "user") : ?>
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
 <div class="container">
