@@ -42,9 +42,13 @@
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Discussions</a>
+            <?php if($_SESSION && isset($_SESSION['id'])) : ?>
+              <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Discussions</a>
+            <?php endif ?>
             <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('dons') ?>">Dons</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a>
+            <?php if($_SESSION && isset($_SESSION['id'])) : ?>
+              <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a>
+            <?php endif ?>
             <?php if($_SESSION && $_SESSION['role'] == 'admin') : ?>
               <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('admin/index') ?>">Admin</a>
             <?php endif ?>

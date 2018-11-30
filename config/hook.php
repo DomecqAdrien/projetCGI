@@ -20,7 +20,8 @@ if(isset($_SERVER['PATH_INFO'])){
 			$this->redirect('');
 		}
 
-
-
+		if(strpos($_SERVER['PATH_INFO'], "/actualites/create") !== false){
+			$this->redirect('actualites');
+		}
 	}
 }

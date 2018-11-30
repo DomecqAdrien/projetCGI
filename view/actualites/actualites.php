@@ -16,10 +16,7 @@
 				<div class="row">
 					<p><?= $actualite['description'] ?></p>
 				</div>
-				<?php if(
-					isset($_SESSION) && ( 
-					$_SESSION['role'] != "user" || 
-					$_SESSION['id'] == $key)) : ?>
+				<?php if($_SESSION && $_SESSION['role'] != "user") : ?>
 				<div class="row">
 					<div class="col-5"></div>
 					<div class="col">
