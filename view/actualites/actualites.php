@@ -16,6 +16,10 @@
 				<div class="row">
 					<p><?= $actualite['description'] ?></p>
 				</div>
+				<?php if(
+					isset($_SESSION) && ( 
+					$_SESSION['role'] != "user" || 
+					$_SESSION['id'] == $key)) : ?>
 				<div class="row">
 					<div class="col-5"></div>
 					<div class="col">
@@ -25,6 +29,7 @@
 						<a href="<?= Router::url("actualites/delete?id={$key}")?>"><input type="submit" class="btn btn-outline-info btn-block btnsubmit" value="Supprimer"/></a>
 					</div>
 				</div>
+			<?php endif ?>
 			</div>
 		</div>
 		<?php endforeach ?>
