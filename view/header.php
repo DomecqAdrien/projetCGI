@@ -32,26 +32,6 @@
     
 
     <body>
-
-        <!-- Navbar -->
-        <!--    <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="accueil">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="actualites">Actualités</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=".<?= Router::components('employes/create') ?>">Evènement</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=".<?= Router::components('tickets/read') ?>">Média</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=".<?= Router::components('tickets/create') ?>">Discussions</a>
-                    </li>
-                </ul> -->
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
           <div class="container">
@@ -100,7 +80,6 @@
             </div>
         <?php endif ?>
 
-        <br><br><br><br>
         <!-- Vue principale -->
         <?= $content ?>
 
@@ -144,7 +123,7 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About IPI-Team</h4>
+            <h4 class="text-uppercase mb-4">Contact IPI-Team</h4>
             <p class="lead mb-0">BLablabla
               <a href="http://startbootstrap.com">Start Football</a>.</p>
           </div>

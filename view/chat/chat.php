@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="<?=Router::components('css/chat.css');?>">
+<br>
 <?php $title = "Chat" ?>
   <div class="container">
     <div class="messaging">

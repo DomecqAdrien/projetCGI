@@ -1,4 +1,7 @@
 <?php
+
+$this->loadModel('MyPdo');
+
 class Adherent {
  
     private $id_user;
@@ -29,7 +32,7 @@ class Adherent {
     public function create(){
 
         $bd = new MyPDO();
-        $query = "INSERT INTO adherent VALUES 
+        $query = "INSERT INTO adherents VALUES 
         (:id_user,:status,:debut_adherent,:fin_adherent)";
        
 

@@ -9,7 +9,8 @@
         </header>
 
 <link rel="stylesheet" href="./components/css/accueil.css">	
-	<div class="container">	
+	<div class="container">
+	<br>	
 		<h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Présentation de l'association IPI-Team</h1>
 			<section id="bloc">
 				<div class="card">
@@ -38,17 +39,17 @@
 			   		</div>
 			</section>
 			<section>
-				<article>
-					<div class="card">
-				      	<div class="card-body">
-				        	<div class="row">
-				        		<div class="col-md-6 offset-2">
-									<h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Présentation des rubriques du site IPI-Team</h1>
-				               			<p>Adhérents, membres, visiteurs. Comment adherer, faire un don. Comment communiquer.</p>
-					        	</div>
-					    	</div>
-				     	</div>
-			   		</div>
-				</article>
+				<h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Présentation des rubriques du site IPI-Team</h1>
+					<article>
+						<div class="card">
+					      	<div class="card-body">
+					        	<div class="row">
+					        		<div class="col-md-6 offset-2">
+					               			<p>Adhérents, membres, visiteurs. Comment adherer, faire un don. Comment communiquer.</p>
+						        	</div>
+						    	</div>
+					     	</div>
+				   		</div>
+					</article>
 			</section>
 	</div>

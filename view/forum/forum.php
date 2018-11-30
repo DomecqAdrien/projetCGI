@@ -1,3 +1,4 @@
+<br>
 <?php $title = "Forum" ?>
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
@@ -21,3 +22,4 @@
 		<?php endforeach ?>
 	</div>		
 </div>
+<br>

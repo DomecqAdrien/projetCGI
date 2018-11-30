@@ -48,5 +48,21 @@ class UserController extends Controller{
         }
     }
 
-    function adherer(){}
+    function adherer(){
+        $this->loadModel('Adherent');
+        if($_POST){
+            $newAdherent = new Adherent();
+            $newAdherent->setStatus('en cours');
+
+            $date = new DateTime();
+            $date->modify("+1 hour");
+            $newAdherent->setDebutAdherent($date->format("Y-m-d h:i:s"));
+            $date->modify("+1 Year");
+            $newAdherent->setFinAdherent($date->format("Y-m-d h:i:s"));
+            $newAdherent->setIdUser($_SESSION['id']);
+            $newAdherent->create();
+            var_dump($newAdherent);
+
+        }
+    }
 }

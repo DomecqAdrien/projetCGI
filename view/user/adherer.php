@@ -55,32 +55,24 @@
                   <input id="nom_porteur" name="nom_porteur" type="text" placeholder="Même nom que sur la carte" required/>
                 </li>
               </ol>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-xl" value="Adhérer"/>
-              </div>
             </fieldset>
           </div>
 
           <div id="Paypal" class="hidden">
-            <p>Prout</p>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-xl" value="Adhérer"/>
-              </div>
+            <p>Prout.. Paiement Paypal indisponible pour le moment. Désolé pour la gène.. En faite non paypal c'est de la merde</p>
           </div>
 
           <div id ="Cheque" class="hidden">
             <p>La première étape de l'adhésion commence par le paiement de l'adhérent. Il vous suffit d'envoyer ou de venir déposer un cheque d'un montant de  € a l'adresse suivant. blabla</p>
+          </div>
+
+            <form method="POST">
               <br>
               <div id="success"></div>
               <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-xl" value="Adhérer"/>
+                <input type="submit" class="btn btn-primary btn-xl" name="prout" value="Adhérer"/>
               </div>
-          </div>
-          </div>
+            </form>
         </div>
       </div>
     </section>

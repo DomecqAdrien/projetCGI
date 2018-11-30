@@ -1,4 +1,5 @@
 <?php $title ="S'inscrire" ?>
+<br>
 <div class="container">
       <h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Créer un compte</h1>
       <div class="card">

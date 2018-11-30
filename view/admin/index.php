@@ -1,4 +1,5 @@
 <?php $title = "panneau admin" ?>
+<br>
 <div class="container">
 	<h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Liste des utilisateurs</h1>
 		<table class="table">
@@ -29,3 +30,4 @@
 			</tbody>
 		</table>
 </div>
+<br>
