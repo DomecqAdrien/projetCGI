@@ -9,11 +9,11 @@ if(isset($_SERVER['PATH_INFO'])){
 		}
 
 		if(strpos($_SERVER['PATH_INFO'], "/forum/post/") !== false){
-			$this->redirect('forum');
+			$this->redirect('user/login');
 		}
 
 		if(strpos($_SERVER['PATH_INFO'], "/forum/new") !== false){
-			$this->redirect('forum');
+			$this->redirect('user/login');
 		}
 
 		if(strpos($_SERVER['PATH_INFO'], "/chat") !== false){
@@ -22,6 +22,10 @@ if(isset($_SERVER['PATH_INFO'])){
 
 		if(strpos($_SERVER['PATH_INFO'], "/actualites/create") !== false){
 			$this->redirect('actualites');
+		}
+
+		if(strpos($_SERVER['PATH_INFO'], "/user/adherer") !== false){
+			$this->redirect('');
 		}
 	}
 }
