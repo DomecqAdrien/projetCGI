@@ -39,23 +39,23 @@
                 <li><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a></li>
                 <li class="menu"><a class="navbar-brand js-scroll-trigger" href="#">Actu IPI-Team</a>
                     <ul>
-                        <li class="menu-deroulant"><a href="<?=Router::url('actualites') ?>">Actualités</a></li>
-                        <li class="menu-deroulant"><a href="<?=Router::url('evenements') ?>">Evènements</a></li>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a></li>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('evenements') ?>">Evènements</a></li>
                     </ul>
                 </li>
                 <li class="menu"><a class="navbar-brand js-scroll-trigger" href="#">Discussions</a>
                     <ul>
-                        <li class="menu-deroulant"><a href="<?=Router::url('forum') ?>">Forum</a></li>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a></li>
                         <?php if($_SESSION && isset($_SESSION['id'])) : ?>
-                          <li class="menu-deroulant"><a href="<?=Router::url('chat') ?>">Chat</a></li>
+                          <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Chat</a></li>
                         <?php endif ?>
                     </ul>
                 </li>
                 <li class="menu"><a class="navbar-brand js-scroll-trigger" href="#">€€€</a>
                     <ul>
-                        <li class="menu-deroulant"><a href="<?=Router::url('dons') ?>">Dons</a></li>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('dons') ?>">Dons</a></li>
                         <?php if($_SESSION && isset($_SESSION['id'])) : ?>
-                        <li class="menu-deroulant"><a href="<?=Router::url('user/adherer') ?>">Adhérer</a></li>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a></li>
                         <?php endif ?>
                     </ul>
                 </li>
