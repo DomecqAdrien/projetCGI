@@ -23,16 +23,14 @@ class ActualitesController extends Controller{
             $actualite->create();
 
             $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-            header('Location: actualites');
+            $this->redirect('actualites');
         }
     }
 
     function update(){
         $this->loadModel('Actualite');
-        //debug($_GET);
         if(!empty($_GET)){
             $data['actualite'] = new Actualite($_GET['id']);
-            //debug($data);
             $this->set($data);
         }
 
@@ -45,7 +43,7 @@ class ActualitesController extends Controller{
             $actualite->update();
             $title = "Actualités";
             $path = "actualites.php";
-            header('Location: actualites');
+            $this->redirect('actualites');
         }
     }
 

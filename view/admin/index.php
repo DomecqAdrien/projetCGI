@@ -1,3 +1,4 @@
+<?php $title = "panneau admin" ?>
 <div class="container">
 	<h1 style="text-align: center; margin-bottom: 25px; margin-top: 10px;">Liste des utilisateurs</h1>
 		<table class="table">
