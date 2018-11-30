@@ -37,11 +37,7 @@ class ForumController extends Controller{
             debug($actualite);
 
 		    $message = array('type' => 'success', 'message' => 'Creation actualite réussie');
-<<<<<<< HEAD
-			header('Location: forum');
-=======
             $this->redirect('forum');
->>>>>>> 999982a7eb4bf8066a30163e0a5b9e479dc80125
 		}
     }
 
