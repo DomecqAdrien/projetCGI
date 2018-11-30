@@ -94,7 +94,7 @@
         </nav>
 
         <!-- Alerts -->
-        <?php if(isset($message)) :  var_dump($message) ;?>
+        <?php if(isset($message)) : ?>
             <div class="alert alert-<?= $message['type'] ?> text-center" role="alert">
                 <?= $message['message'] ?>
             </div>

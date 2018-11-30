@@ -12,7 +12,10 @@ class ForumController extends Controller{
         foreach ($d['posts'] as $post) {
             $post->nbCommentaires = Commentaire::getCountCommentsById($post->id)->nbCommentaires;
         }
-
+        if(!$_SESSION){
+            $d['message'] = array('type' => 'warning', 'message' => 'Veuillez vous connecter pour accéder aux forums');
+        }
+        
         $this->set($d);
         
 
@@ -41,7 +44,7 @@ class ForumController extends Controller{
 		}
     }
 
-    function post($id){
+    function post($id = null){ 
         $this->loadModel('Commentaire');
         if($_POST){
             $commentaire = new Commentaire();

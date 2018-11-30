@@ -1,6 +1,6 @@
 <div class="card">
 	<div class="card-header">
-          <a href="post/<?= $post->id ?>"><?= $post->titre ?></a>
+          <a href="<?= Router::url("forum/post/{$post->id}") ?>"><?= $post->titre ?></a>
           <time class="float-right">
             <i class="fa fa-calendar"></i> <?= $post->dateCreation ?>
           </time>
