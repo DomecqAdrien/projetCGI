@@ -26,7 +26,7 @@
 
                   <div class="form-group" style="margin-bottom: 20px">
                      <label for="email">Email :</label>
-                     <input id="email" class="form-control" type="text" name="mail" value="">
+                     <input id="email" class="form-control" type="email" name="mail" value="">
                   </div>
                   <div class="form-group" style="margin-bottom: 40px">
                      <label for="password">Mot de passe :</label>

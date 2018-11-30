@@ -44,7 +44,7 @@
           <div class="type_msg">
             <div class="input_msg_write">
               <input type="text" class="write_msg" placeholder="Type a message" />
-              <button class="msg_send_btn" type="button"><i class="" aria-hidden="true"></i></button>
+              <button class="msg_send_btn" type="button"><i class="far fa-envelope"></i></button>
             </div>
           </div>
         </div>      

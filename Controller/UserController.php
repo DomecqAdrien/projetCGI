@@ -55,7 +55,7 @@ class UserController extends Controller{
             $newUser->setPassword($_POST['password']);
 
             $newUser->create();
-            //$this->redirect('user/login');
+            $this->redirect('user/login');
             
         }
     }
@@ -73,7 +73,9 @@ class UserController extends Controller{
             $newAdherent->setFinAdherent($date->format("Y-m-d h:i:s"));
             $newAdherent->setIdUser($_SESSION['id']);
             $newAdherent->create();
-            var_dump($newAdherent);
+            $this->redirect('accueil');
         }
+
+
     }
 }

@@ -13,7 +13,7 @@
 	        <div class="col-md-9">
 	        	<h6 maxlength="10"><?= $post->contenu ?></h6>
 	        	<hr>
-	        	<?= $users[$post->id_user]['prenom']." ".$users[$post->id_user]['nom'] ?><br>
+	        	Auteur:  <?= $users[$post->id_user]['prenom']." ".$users[$post->id_user]['nom'] ?><br>
 	        </div>
 	        <div class="col-md-3">
 	            <li class="list-unstyled"> Commentaires: <?= $post->nbCommentaires ?></li>

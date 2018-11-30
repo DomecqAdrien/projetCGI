@@ -54,6 +54,8 @@ class ActualitesController extends Controller{
             $actualite = new Actualite($_GET['id']);
             $actualite->delete();
         }
+
+        $this->redirect('actualites');
     }
 
 }
