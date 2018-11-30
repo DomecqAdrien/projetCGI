@@ -14,7 +14,6 @@ class UserController extends Controller{
                         foreach ($login as $key => $value) {
                             $_SESSION[$key] = $value;
                         }
-                        $message = array('type' => 'success', 'message' => 'Connexion réussie');
 
                         $this->redirect('accueil');
                     }
