@@ -5,22 +5,35 @@ class UserController extends Controller{
     function login(){
         $this->loadModel('User');
         if($_POST){
-            debug($_POST);
+            if(!empty($_POST['mail']) && !empty($_POST['password'])){
 
-            $login = User::GetOneByMail($_POST['mail']);
+                $login = User::GetOneByMail($_POST['mail']);
 
-            debug($login);
+                if(!empty($login)){
+                    if(hash("sha256", $_POST['password'].$login->salt) == $login->password){
+                        foreach ($login as $key => $value) {
+                            $_SESSION[$key] = $value;
+                        }
 
-            if(hash("sha256", $_POST['password'].$login->salt) == $login->password){
-                foreach ($login as $key => $value) {
-                    $_SESSION[$key] = $value;
+                        $this->redirect('accueil');
+                    }
+                    else {
+                        $d['message'] = array('type' => 'danger', 'message' => 'Mot de passe incorrect');
+                    }
                 }
+                else {
+                    $d['message'] = array('type' => 'danger', 'message' => 'Email incorrect');
 
-                $message = array('type' => 'success', 'message' => 'Connexion réussie');
-
-                $this->redirect('accueil');
+                }             
+            } 
+            else {
+                $d['message'] = array('type' => 'danger', 'message' => 'Login ou mot de passe incorrect');
+                
             }
+            $this->set($d);
+
         }
+
     }
 
     function logout(){
@@ -42,9 +55,8 @@ class UserController extends Controller{
             $newUser->setPassword($_POST['password']);
 
             $newUser->create();
-
-            $this->redirect('user/login');
-
+            //$this->redirect('user/login');
+            
         }
     }
 
@@ -62,7 +74,6 @@ class UserController extends Controller{
             $newAdherent->setIdUser($_SESSION['id']);
             $newAdherent->create();
             var_dump($newAdherent);
-
         }
     }
 }

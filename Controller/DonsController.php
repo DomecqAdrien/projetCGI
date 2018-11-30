@@ -2,7 +2,7 @@
 
 class DonsController extends Controller{
 
-	function dons(){
+	function index(){
 		$this->loadModel('Dons');
 
 		if($_POST){

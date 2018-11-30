@@ -5,7 +5,7 @@
       <div class="card">
         <div class="card-body">
           <div class="row">
-            <div class="col-md-6 offset-2">
+            <div class="col-md-6 mx-auto">
                <form method="post">
                   <div class="form-group" style="margin-bottom: 20px">
                      <label for="nom">Nom : </label>
@@ -39,3 +39,4 @@
       </div>
    </div>
 </div>
+<br>

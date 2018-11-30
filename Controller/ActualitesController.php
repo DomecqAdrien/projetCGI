@@ -2,7 +2,7 @@
 
 class ActualitesController extends Controller{
 
-    function actualites(){
+    function index(){
         $this->loadModel('Actualite');
         $data['a_actualites'] = Actualite::getAllActualites();
         $this->set($data);

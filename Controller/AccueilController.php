@@ -2,7 +2,7 @@
 
 class AccueilController extends Controller{
 
-    function accueil(){}
+    function index(){}
 
 
 }

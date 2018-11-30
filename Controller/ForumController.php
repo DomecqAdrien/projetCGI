@@ -2,7 +2,7 @@
 
 class ForumController extends Controller{
 
-    function forum(){
+    function index(){
         $this->loadModel('Post');
         $this->loadModel('User');
         $this->loadModel('Commentaire');

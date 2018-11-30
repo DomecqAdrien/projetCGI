@@ -3,7 +3,9 @@
 <link rel="stylesheet" type="text/css" href="<?= Router::components('css/forum.css') ?>">
 <h1 class="text-center">Forum</h1>	
 <div class="container">
-	<a href="<?= Router::url('forum/new') ?>">Créer un post</a>
+	<?php if($_SESSION && $_SESSION['role'] != 'user') : ?>
+		<a href="<?= Router::url('forum/new') ?>">Créer un post</a>
+	<?php endif ?>
 
 	<div class="container">
 		<h3>Posts Importants</h3>

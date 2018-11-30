@@ -2,7 +2,7 @@
 
 class ChatController extends Controller{
 
-    function chat(){
+    function index(){
     	$this->loadModel('Chat');
     	$this->loadModel('User');
     	$data['users'] = User::getAllUsers($_SESSION['id']);
