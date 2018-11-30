@@ -3,7 +3,6 @@
 if(isset($_SERVER['PATH_INFO'])){
 
 	if(!$_SESSION){
-		debug($_SERVER['PATH_INFO']);
 
 		if(strpos($_SERVER['PATH_INFO'], "admin") !== false){
 			$this->redirect('');
