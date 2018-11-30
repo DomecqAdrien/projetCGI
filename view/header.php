@@ -24,7 +24,7 @@
         <link href="<?= Router::components('css/freelancer.min.css') ?>" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?= Router::components('css/bootstrap-theme.min') ?>">
 
-    
+        <link href="<?= Router::components('css/header.css') ?>" rel="stylesheet">
 
     </head>
 
@@ -35,20 +35,31 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
           <div class="container">
-            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-              <i class="fas fa-bars"></i>
-            </button>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a>
-            <?php if($_SESSION && isset($_SESSION['id'])) : ?>
-              <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Discussions</a>
-            <?php endif ?>
-            <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('dons') ?>">Dons</a>
-            <?php if($_SESSION && isset($_SESSION['id'])) : ?>
-              <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a>
-            <?php endif ?>
+            <ul id="menu-deroulant">
+                <li><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('accueil') ?>">Accueil</a></li>
+                <li class="menu"><a class="navbar-brand js-scroll-trigger" href="#">Actu IPI-Team</a>
+                    <ul>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('actualites') ?>">Actualités</a></li>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('evenements') ?>">Evènements</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a class="navbar-brand js-scroll-trigger" href="#">Discussions</a>
+                    <ul>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('forum') ?>">Forum</a></li>
+                        <?php if($_SESSION && isset($_SESSION['id'])) : ?>
+                          <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('chat') ?>">Chat</a></li>
+                        <?php endif ?>
+                    </ul>
+                </li>
+                <li class="menu"><a class="navbar-brand js-scroll-trigger" href="#">€€€</a>
+                    <ul>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('dons') ?>">Dons</a></li>
+                        <?php if($_SESSION && isset($_SESSION['id'])) : ?>
+                        <li class="menu-deroulant"><a class="navbar-brand js-scroll-trigger" href="<?=Router::url('user/adherer') ?>">Adhérer</a></li>
+                        <?php endif ?>
+                    </ul>
+                </li>
+            </ul>   
             <?php if($_SESSION && $_SESSION['role'] == 'admin') : ?>
               <a class="navbar-brand js-scroll-trigger" href="<?=Router::url('admin/index') ?>">Admin</a>
             <?php endif ?>

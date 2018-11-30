@@ -15,27 +15,8 @@ $('.chat_list').click(function(){
 
 $('.msg_send_btn').click(function(e){
 	e.preventDefault();
-	if ($('.write_msg').val() != ''){
-		$.ajax({
-			url: 'chat/ajax',
-			type: 'post',
-			data: { 
-				'id_to': $('.active_chat').find('.id').attr('id'),
-				'message': $('.write_msg').val()
-			},
-			success: function(response) {
-				$('.write_msg').val('');
-				$('.msgs').html(response);
-				$('.msg_history').scrollTop($('.msg_history')[0].scrollHeight)
-			}
-		});
-	}
-});
-
-$(document).keyup(function(e){
-	e.preventDefault(); 
-	if ($('.write_msg').val() != ''){
-		if (e.which == 13){
+	if ($(document).find('.active_chat')){
+		if ($('.write_msg').val() != ''){
 			$.ajax({
 				url: 'chat/ajax',
 				type: 'post',
@@ -49,6 +30,29 @@ $(document).keyup(function(e){
 					$('.msg_history').scrollTop($('.msg_history')[0].scrollHeight)
 				}
 			});
+		}
+	}
+});
+
+$(document).keyup(function(e){
+	e.preventDefault(); 
+	if ($(document).find('.active_chat')){
+		if ($('.write_msg').val() != ''){
+			if (e.which == 13){
+				$.ajax({
+					url: 'chat/ajax',
+					type: 'post',
+					data: { 
+						'id_to': $('.active_chat').find('.id').attr('id'),
+						'message': $('.write_msg').val()
+					},
+					success: function(response) {
+						$('.write_msg').val('');
+						$('.msgs').html(response);
+						$('.msg_history').scrollTop($('.msg_history')[0].scrollHeight)
+					}
+				});
+			}
 		}
 	}
 });
